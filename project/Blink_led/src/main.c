@@ -9,6 +9,6 @@ int main(void)
     while (1)
     {
         PORTB ^= (1 << PB5);   // toggle LED
-        _delay_ms(500);
+        _delay_ms(50);
     }
 }
