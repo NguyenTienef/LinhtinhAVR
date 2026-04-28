@@ -1,35 +1,30 @@
 #include "config.h"
 #include "lcd.h"
-#include <util/delay.h>
+#include "timer.h"
 
 int main(void)
 {
-    // Khởi tạo LCD
     lcd_init();
-    
-    // Chờ LCD sẵn sàng
-    _delay_ms(100);
+    clock_init();
 
-    // Xóa màn hình
-    lcd_clear();
-    _delay_ms(50);
-    
-    // In dòng 1
-    lcd_set_cursor(0, 0);
-    _delay_ms(10);
-    lcd_print("Hello LCD");
-    _delay_ms(50);
-    
-    // In dòng 2
-    lcd_set_cursor(1, 0);
-    _delay_ms(10);
-    lcd_print("ATmega328P");
-    _delay_ms(50);
+    char buf[17];
+
+    // Dòng 1: tiêu đề cố định
+    lcd_print_at(0, 2, "-- CLOCK --");
+
+    // Hiển thị thời gian ban đầu ngay lập tức
+    clock_get_string(buf);
+    lcd_print_at(1, 1, buf);
 
     while (1)
     {
-        // Chạy vô hạn - LED blink hoặc làm gì đó tùy ý
-        _delay_ms(1000);
+        // clock_update() trả về 1 đúng mỗi giây (hardware Timer1)
+        if (clock_update())
+        {
+            clock_get_string(buf);
+            lcd_print_at(1, 1, buf);
+        }
+        // CPU rảnh làm việc khác hoặc sleep ở đây
     }
 
     return 0;

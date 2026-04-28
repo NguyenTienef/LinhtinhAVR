@@ -13,6 +13,4 @@ CMakeFiles/lcd_clock.elf.dir/src/main.c.obj: \
  C:/msys64/mingw64/avr/include/avr/fuse.h \
  C:/msys64/mingw64/avr/include/avr/lock.h \
  C:\Users\Admin\Desktop\Cfile\project\Lcd1602\include/lcd.h \
- C:/msys64/mingw64/avr/include/util/delay.h \
- C:/msys64/mingw64/avr/include/util/delay_basic.h \
- C:/msys64/mingw64/avr/include/math.h
+ C:\Users\Admin\Desktop\Cfile\project\Lcd1602\include/timer.h
