@@ -1,0 +1,1 @@
+C:\msys64\mingw64\bin\avr-gcc.exe -mmcu=atmega328p CMakeFiles/Blink_led.elf.dir/src/main.c.obj -o Blink_led.elf

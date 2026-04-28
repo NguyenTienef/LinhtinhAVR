@@ -1,3 +1,3 @@
-/home/tien/LinhtinhAVR/Blink_led/build/CMakeFiles/main.elf.dir
-/home/tien/LinhtinhAVR/Blink_led/build/CMakeFiles/edit_cache.dir
-/home/tien/LinhtinhAVR/Blink_led/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Desktop/Cfile/project/Blink_led/build/CMakeFiles/Blink_led.elf.dir
+C:/Users/Admin/Desktop/Cfile/project/Blink_led/build/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/Cfile/project/Blink_led/build/CMakeFiles/rebuild_cache.dir
