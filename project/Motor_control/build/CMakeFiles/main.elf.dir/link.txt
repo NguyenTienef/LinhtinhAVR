@@ -1,1 +1,0 @@
-avr-gcc -mmcu=atmega16 -DF_CPU=16000000UL -Os CMakeFiles/main.elf.dir/src/lcd.c.o CMakeFiles/main.elf.dir/src/main.c.o -o main.elf 

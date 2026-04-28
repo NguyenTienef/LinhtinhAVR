@@ -23,7 +23,7 @@ ISR(INT0_vect)
 
 ISR(TIMER0_OVF_vect)
 {
-    TCCR0 = 0;
+    TCCR0A = 0;
 
     if(countT0 >= 20)
     {
@@ -34,13 +34,13 @@ ISR(TIMER0_OVF_vect)
 
     countT0++;
 
-    TCCR0=(1<<CS02)|(1<<CS00);
+    TCCR0A=(1<<CS02)|(1<<CS00);
     TCNT0=0x06;
 }
 
 ISR(TIMER2_OVF_vect)
 {
-    TCCR2=0;
+    TCCR2A=0;
 
     if(countT2 >=5)
     {
@@ -106,7 +106,7 @@ ISR(TIMER2_OVF_vect)
     countT2++;
 
     TCNT2=0x00;
-    TCCR2=(1<<CS22)|(1<<CS21)|(1<<CS20);
+    TCCR2A=(1<<CS22)|(1<<CS21)|(1<<CS20);
 }
 
 int main(void)
@@ -117,7 +117,7 @@ PORTB |= (1<<PB0)|(1<<PB1)|(1<<PB2)|(1<<PB3);
 
 DDRD |= (1<<PD5)|(1<<PD3)|(1<<PD1);
 
-TCCR0=(1<<CS02)|(1<<CS00);
+TCCR0A=(1<<CS02)|(1<<CS00);
 TCNT0=0x06;
 
 TCCR1A=(1<<COM1A1)|(1<<WGM11);
@@ -126,12 +126,13 @@ TCCR1B=(1<<WGM13)|(1<<WGM12)|(1<<CS10);
 ICR1=7999;
 OCR1A=0;
 
-TCCR2=(1<<CS22)|(1<<CS21)|(1<<CS20);
+TCCR2A=(1<<CS22)|(1<<CS21)|(1<<CS20);
 TCNT2=0x06;
 
-TIMSK=(1<<TOIE2)|(1<<TOIE0);
+TIMSK0=(1<<TOIE0);
+TIMSK2=(1<<TOIE2);
 
-GICR |= (1<<INT0);
+EIMSK |= (1<<INT0);
 MCUCR |= (1<<ISC01);
 
 lcd_init();

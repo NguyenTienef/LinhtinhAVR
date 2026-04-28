@@ -1,0 +1,1 @@
+C:\msys64\mingw64\bin\avr-gcc.exe -mmcu=atmega328p CMakeFiles/lcd_clock.elf.dir/src/main.c.obj CMakeFiles/lcd_clock.elf.dir/src/lcd.c.obj -o lcd_clock.elf
