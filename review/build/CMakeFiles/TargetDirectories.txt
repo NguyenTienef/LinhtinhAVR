@@ -1,0 +1,5 @@
+C:/Users/Admin/Desktop/Cfile/review/build/CMakeFiles/twosum.dir
+C:/Users/Admin/Desktop/Cfile/review/build/CMakeFiles/palindrome_number.dir
+C:/Users/Admin/Desktop/Cfile/review/build/CMakeFiles/add2num.dir
+C:/Users/Admin/Desktop/Cfile/review/build/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/Cfile/review/build/CMakeFiles/rebuild_cache.dir
