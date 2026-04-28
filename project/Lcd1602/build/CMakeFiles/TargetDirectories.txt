@@ -1,0 +1,3 @@
+C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/lcd_clock.elf.dir
+C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/rebuild_cache.dir

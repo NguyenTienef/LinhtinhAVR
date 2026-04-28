@@ -1,0 +1,3 @@
+/home/tien/LinhtinhAVR/build/CMakeFiles/main.elf.dir
+/home/tien/LinhtinhAVR/build/CMakeFiles/edit_cache.dir
+/home/tien/LinhtinhAVR/build/CMakeFiles/rebuild_cache.dir
