@@ -1,0 +1,1 @@
+C:\msys64\mingw64\bin\avr-g++.exe -mmcu=atmega328p CMakeFiles/lcd_i2c.elf.dir/src/lcd_i2c.cpp.obj CMakeFiles/lcd_i2c.elf.dir/lib/LiquidCrystal_I2C.cpp.obj CMakeFiles/lcd_i2c.elf.dir/lib/Wire.cpp.obj CMakeFiles/lcd_i2c.elf.dir/lib/delay.cpp.obj -o lcd_i2c.elf
