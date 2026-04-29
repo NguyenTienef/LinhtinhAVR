@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lcd_clock.elf
+# Target rules for targets named Motor_control.elf
 
 # Build rule for target.
-lcd_clock.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lcd_clock.elf
-.PHONY : lcd_clock.elf
+Motor_control.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Motor_control.elf
+.PHONY : Motor_control.elf
 
 # fast build rule for target.
-lcd_clock.elf/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/build
-.PHONY : lcd_clock.elf/fast
+Motor_control.elf/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/build
+.PHONY : Motor_control.elf/fast
 
 src/lcd.obj: src/lcd.c.obj
 .PHONY : src/lcd.obj
 
 # target to build an object file
 src/lcd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/src/lcd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/src/lcd.c.obj
 .PHONY : src/lcd.c.obj
 
 src/lcd.i: src/lcd.c.i
@@ -141,7 +141,7 @@ src/lcd.i: src/lcd.c.i
 
 # target to preprocess a source file
 src/lcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/src/lcd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/src/lcd.c.i
 .PHONY : src/lcd.c.i
 
 src/lcd.s: src/lcd.c.s
@@ -149,7 +149,7 @@ src/lcd.s: src/lcd.c.s
 
 # target to generate assembly for a file
 src/lcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/src/lcd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/src/lcd.c.s
 .PHONY : src/lcd.c.s
 
 src/main.obj: src/main.c.obj
@@ -157,7 +157,7 @@ src/main.obj: src/main.c.obj
 
 # target to build an object file
 src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/src/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/src/main.c.obj
 .PHONY : src/main.c.obj
 
 src/main.i: src/main.c.i
@@ -165,7 +165,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -173,7 +173,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 # Help Target
@@ -184,7 +184,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... lcd_clock.elf
+	@echo ... Motor_control.elf
 	@echo ... src/lcd.obj
 	@echo ... src/lcd.i
 	@echo ... src/lcd.s

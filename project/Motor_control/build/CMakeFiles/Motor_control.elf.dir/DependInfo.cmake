@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Admin/Desktop/Cfile/project/Motor_control/src/lcd.c" "CMakeFiles/lcd_clock.elf.dir/src/lcd.c.obj" "gcc" "CMakeFiles/lcd_clock.elf.dir/src/lcd.c.obj.d"
-  "C:/Users/Admin/Desktop/Cfile/project/Motor_control/src/main.c" "CMakeFiles/lcd_clock.elf.dir/src/main.c.obj" "gcc" "CMakeFiles/lcd_clock.elf.dir/src/main.c.obj.d"
+  "C:/Users/Admin/Desktop/Cfile/project/Motor_control/src/lcd.c" "CMakeFiles/Motor_control.elf.dir/src/lcd.c.obj" "gcc" "CMakeFiles/Motor_control.elf.dir/src/lcd.c.obj.d"
+  "C:/Users/Admin/Desktop/Cfile/project/Motor_control/src/main.c" "CMakeFiles/Motor_control.elf.dir/src/main.c.obj" "gcc" "CMakeFiles/Motor_control.elf.dir/src/main.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

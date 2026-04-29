@@ -62,11 +62,11 @@ CMAKE_BINARY_DIR = C:\Users\Admin\Desktop\Cfile\project\Motor_control\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lcd_clock.elf.dir/all
+all: CMakeFiles/Motor_control.elf.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/lcd_clock.elf.dir/codegen
+codegen: CMakeFiles/Motor_control.elf.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,40 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lcd_clock.elf.dir/clean
+clean: CMakeFiles/Motor_control.elf.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lcd_clock.elf.dir
+# Target rules for target CMakeFiles/Motor_control.elf.dir
 
 # All Build rule for target.
-CMakeFiles/lcd_clock.elf.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\project\Motor_control\build\CMakeFiles --progress-num=1,2,3 "Built target lcd_clock.elf"
-.PHONY : CMakeFiles/lcd_clock.elf.dir/all
+CMakeFiles/Motor_control.elf.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\project\Motor_control\build\CMakeFiles --progress-num=1,2,3 "Built target Motor_control.elf"
+.PHONY : CMakeFiles/Motor_control.elf.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lcd_clock.elf.dir/rule: cmake_check_build_system
+CMakeFiles/Motor_control.elf.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\project\Motor_control\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/lcd_clock.elf.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Motor_control.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\project\Motor_control\build\CMakeFiles 0
-.PHONY : CMakeFiles/lcd_clock.elf.dir/rule
+.PHONY : CMakeFiles/Motor_control.elf.dir/rule
 
 # Convenience name for target.
-lcd_clock.elf: CMakeFiles/lcd_clock.elf.dir/rule
-.PHONY : lcd_clock.elf
+Motor_control.elf: CMakeFiles/Motor_control.elf.dir/rule
+.PHONY : Motor_control.elf
 
 # codegen rule for target.
-CMakeFiles/lcd_clock.elf.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\project\Motor_control\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target lcd_clock.elf"
-.PHONY : CMakeFiles/lcd_clock.elf.dir/codegen
+CMakeFiles/Motor_control.elf.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\project\Motor_control\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target Motor_control.elf"
+.PHONY : CMakeFiles/Motor_control.elf.dir/codegen
 
 # clean rule for target.
-CMakeFiles/lcd_clock.elf.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\lcd_clock.elf.dir\build.make CMakeFiles/lcd_clock.elf.dir/clean
-.PHONY : CMakeFiles/lcd_clock.elf.dir/clean
+CMakeFiles/Motor_control.elf.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Motor_control.elf.dir\build.make CMakeFiles/Motor_control.elf.dir/clean
+.PHONY : CMakeFiles/Motor_control.elf.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

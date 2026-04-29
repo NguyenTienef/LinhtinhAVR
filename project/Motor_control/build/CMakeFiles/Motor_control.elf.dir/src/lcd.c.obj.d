@@ -1,4 +1,4 @@
-CMakeFiles/lcd_clock.elf.dir/src/lcd.c.obj: \
+CMakeFiles/Motor_control.elf.dir/src/lcd.c.obj: \
  C:\Users\Admin\Desktop\Cfile\project\Motor_control\src\lcd.c \
  C:\Users\Admin\Desktop\Cfile\project\Motor_control\include/lcd.h \
  C:/msys64/mingw64/avr/include/avr/io.h \

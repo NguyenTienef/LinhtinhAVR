@@ -1,0 +1,1 @@
+C:\msys64\mingw64\bin\avr-gcc.exe -mmcu=atmega328p CMakeFiles/Motor_control.elf.dir/src/main.c.obj CMakeFiles/Motor_control.elf.dir/src/lcd.c.obj -o Motor_control.elf
