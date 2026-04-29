@@ -2065,8 +2065,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-yijo8r"
-      binary: "C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-yijo8r"
+      source: "C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-47pr1g"
+      binary: "C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-47pr1g"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -2075,13 +2075,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-yijo8r'
+        Change Dir: 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-47pr1g'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_adfe1/fast
-        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_adfe1.dir\\build.make CMakeFiles/cmTC_adfe1.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-yijo8r'
-        Building C object CMakeFiles/cmTC_adfe1.dir/CMakeCCompilerABI.c.obj
-        C:\\msys64\\mingw64\\bin\\avr-gcc.exe   -v -o CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_11fdd/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_11fdd.dir\\build.make CMakeFiles/cmTC_11fdd.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-47pr1g'
+        Building C object CMakeFiles/cmTC_11fdd.dir/CMakeCCompilerABI.c.obj
+        C:\\msys64\\mingw64\\bin\\avr-gcc.exe   -v -o CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         Reading specs from C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/device-specs/specs-avr2
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\avr-gcc.exe
@@ -2090,8 +2090,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib zstd
         gcc version 14.2.0 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_adfe1.dir\\'
-         C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles\\cmTC_adfe1.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\cco4rsr0.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_11fdd.dir\\'
+         C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles\\cmTC_11fdd.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\cciRU64A.s
         GNU C17 (GCC) version 14.2.0 (avr)
         	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2108,13 +2108,13 @@ events:
          C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/include
         End of search list.
         Compiler executable checksum: 3851963a8bfefd592500a2bbea6749fe
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_adfe1.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/bin/as.exe -mmcu=avr2 -mgcc-isr -o CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\cco4rsr0.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_11fdd.dir\\'
+         C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/bin/as.exe -mmcu=avr2 -mgcc-isr -o CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\cciRU64A.s
         COMPILER_PATH=C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/;C:/msys64/mingw64/bin/../libexec/gcc/;C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_adfe1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_adfe1.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_11fdd
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_11fdd.dir\\link.txt --verbose=1
         Using built-in specs.
         Reading specs from C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/device-specs/specs-avr2
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\avr-gcc.exe
@@ -2126,11 +2126,11 @@ events:
         gcc version 14.2.0 (GCC) 
         COMPILER_PATH=C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/;C:/msys64/mingw64/bin/../libexec/gcc/;C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_adfe1' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'cmTC_adfe1.'
-         C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccMA0gN4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_adfe1 -LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib CMakeFiles/cmTC_adfe1.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_adfe1' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'cmTC_adfe1.'
-        C:\\msys64\\mingw64\\bin\\avr-gcc.exe  -v CMakeFiles/cmTC_adfe1.dir/CMakeCCompilerABI.c.obj -o cmTC_adfe1
-        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-yijo8r'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11fdd' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'cmTC_11fdd.'
+         C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccQq6qMH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_11fdd -LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib CMakeFiles/cmTC_11fdd.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11fdd' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'cmTC_11fdd.'
+        C:\\msys64\\mingw64\\bin\\avr-gcc.exe  -v CMakeFiles/cmTC_11fdd.dir/CMakeCCompilerABI.c.obj -o cmTC_11fdd
+        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-47pr1g'
         
       exitCode: 0
   -
@@ -2163,13 +2163,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-yijo8r']
+        ignore line: [Change Dir: 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-47pr1g']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_adfe1/fast]
-        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_adfe1.dir\\build.make CMakeFiles/cmTC_adfe1.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-yijo8r']
-        ignore line: [Building C object CMakeFiles/cmTC_adfe1.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\msys64\\mingw64\\bin\\avr-gcc.exe   -v -o CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_11fdd/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_11fdd.dir\\build.make CMakeFiles/cmTC_11fdd.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-47pr1g']
+        ignore line: [Building C object CMakeFiles/cmTC_11fdd.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\msys64\\mingw64\\bin\\avr-gcc.exe   -v -o CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [Reading specs from C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/device-specs/specs-avr2]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\avr-gcc.exe]
@@ -2178,8 +2178,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 14.2.0 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_adfe1.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles\\cmTC_adfe1.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\cco4rsr0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_11fdd.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/ C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles\\cmTC_11fdd.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\cciRU64A.s]
         ignore line: [GNU C17 (GCC) version 14.2.0 (avr)]
         ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2196,17 +2196,17 @@ events:
         ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 3851963a8bfefd592500a2bbea6749fe]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_adfe1.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/bin/as.exe -mmcu=avr2 -mgcc-isr -o CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\cco4rsr0.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_11fdd.dir\\']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/bin/as.exe -mmcu=avr2 -mgcc-isr -o CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\cciRU64A.s]
         ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../libexec/gcc/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/bin/]
         ignore line: [LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_adfe1.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_adfe1]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_adfe1.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles\\cmTC_11fdd.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_11fdd]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_11fdd.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [Reading specs from C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/device-specs/specs-avr2]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\avr-gcc.exe]
@@ -2222,30 +2222,30 @@ events:
         ignore line: [LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_adfe1' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'cmTC_adfe1.']
-        link line: [ C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccMA0gN4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_adfe1 -LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib CMakeFiles/cmTC_adfe1.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11fdd' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'cmTC_11fdd.']
+        link line: [ C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccQq6qMH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc -o cmTC_11fdd -LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib CMakeFiles/cmTC_11fdd.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
           arg [C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/mingw64/bin/../libexec/gcc/avr/14.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccMA0gN4.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccQq6qMH.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lm] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_adfe1] ==> ignore
+          arg [cmTC_11fdd] ==> ignore
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc] ==> dir [C:/msys64/mingw64/bin/../lib/gcc]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0/../../../../avr/lib]
-          arg [CMakeFiles/cmTC_adfe1.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_11fdd.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [--start-group] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lm] ==> lib [m]
           arg [-lc] ==> lib [c]
           arg [--end-group] ==> ignore
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_adfe1' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'cmTC_adfe1.']
-        ignore line: [C:\\msys64\\mingw64\\bin\\avr-gcc.exe  -v CMakeFiles/cmTC_adfe1.dir/CMakeCCompilerABI.c.obj -o cmTC_adfe1]
-        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-yijo8r']
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_11fdd' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'cmTC_11fdd.']
+        ignore line: [C:\\msys64\\mingw64\\bin\\avr-gcc.exe  -v CMakeFiles/cmTC_11fdd.dir/CMakeCCompilerABI.c.obj -o cmTC_11fdd]
+        ignore line: [mingw32-make[1]: Leaving directory 'C:/Users/Admin/Desktop/Cfile/project/Lcd1602/build/CMakeFiles/CMakeScratch/TryCompile-47pr1g']
         ignore line: []
         ignore line: []
         collapse library dir [C:/msys64/mingw64/bin/../lib/gcc/avr/14.2.0] ==> [C:/msys64/mingw64/lib/gcc/avr/14.2.0]
