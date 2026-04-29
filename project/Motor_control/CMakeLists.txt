@@ -11,7 +11,7 @@ set(CMAKE_EXE_LINKER_FLAGS_INIT "")
 set(CMAKE_SHARED_LINKER_FLAGS_INIT "")
 set(CMAKE_MODULE_LINKER_FLAGS_INIT "")
 
-project(lcd_clock C)
+project(Motor_control C)
 
 set(MCU atmega328p)
 set(F_CPU 16000000UL)
