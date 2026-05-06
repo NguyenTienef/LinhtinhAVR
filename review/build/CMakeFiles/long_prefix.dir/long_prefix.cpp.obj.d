@@ -1,5 +1,5 @@
-CMakeFiles/twosum.dir/twosum.cpp.obj: \
- C:\Users\Admin\Desktop\Cfile\review\twosum.cpp \
+CMakeFiles/long_prefix.dir/long_prefix.cpp.obj: \
+ C:\Users\Admin\Desktop\Cfile\review\long_prefix.cpp \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/stdc++.h \
  C:/msys64/ucrt64/include/c++/14.2.0/cassert \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Admin/Desktop/Cfile/review/palindrome_number.cpp" "CMakeFiles/palindrome_number.dir/palindrome_number.cpp.obj" "gcc" "CMakeFiles/palindrome_number.dir/palindrome_number.cpp.obj.d"
+  "C:/Users/Admin/Desktop/Cfile/review/long_prefix.cpp" "CMakeFiles/long_prefix.dir/long_prefix.cpp.obj" "gcc" "CMakeFiles/long_prefix.dir/long_prefix.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

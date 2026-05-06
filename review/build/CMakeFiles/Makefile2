@@ -62,15 +62,11 @@ CMAKE_BINARY_DIR = C:\Users\Admin\Desktop\Cfile\review\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/twosum.dir/all
-all: CMakeFiles/palindrome_number.dir/all
-all: CMakeFiles/add2num.dir/all
+all: CMakeFiles/long_prefix.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/twosum.dir/codegen
-codegen: CMakeFiles/palindrome_number.dir/codegen
-codegen: CMakeFiles/add2num.dir/codegen
+codegen: CMakeFiles/long_prefix.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -78,106 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/twosum.dir/clean
-clean: CMakeFiles/palindrome_number.dir/clean
-clean: CMakeFiles/add2num.dir/clean
+clean: CMakeFiles/long_prefix.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/twosum.dir
+# Target rules for target CMakeFiles/long_prefix.dir
 
 # All Build rule for target.
-CMakeFiles/twosum.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\twosum.dir\build.make CMakeFiles/twosum.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\twosum.dir\build.make CMakeFiles/twosum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles --progress-num=5,6 "Built target twosum"
-.PHONY : CMakeFiles/twosum.dir/all
+CMakeFiles/long_prefix.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\long_prefix.dir\build.make CMakeFiles/long_prefix.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\long_prefix.dir\build.make CMakeFiles/long_prefix.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles --progress-num=1,2 "Built target long_prefix"
+.PHONY : CMakeFiles/long_prefix.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/twosum.dir/rule: cmake_check_build_system
+CMakeFiles/long_prefix.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/twosum.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/long_prefix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles 0
-.PHONY : CMakeFiles/twosum.dir/rule
+.PHONY : CMakeFiles/long_prefix.dir/rule
 
 # Convenience name for target.
-twosum: CMakeFiles/twosum.dir/rule
-.PHONY : twosum
+long_prefix: CMakeFiles/long_prefix.dir/rule
+.PHONY : long_prefix
 
 # codegen rule for target.
-CMakeFiles/twosum.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\twosum.dir\build.make CMakeFiles/twosum.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles --progress-num=5,6 "Finished codegen for target twosum"
-.PHONY : CMakeFiles/twosum.dir/codegen
+CMakeFiles/long_prefix.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\long_prefix.dir\build.make CMakeFiles/long_prefix.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles --progress-num=1,2 "Finished codegen for target long_prefix"
+.PHONY : CMakeFiles/long_prefix.dir/codegen
 
 # clean rule for target.
-CMakeFiles/twosum.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\twosum.dir\build.make CMakeFiles/twosum.dir/clean
-.PHONY : CMakeFiles/twosum.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/palindrome_number.dir
-
-# All Build rule for target.
-CMakeFiles/palindrome_number.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_number.dir\build.make CMakeFiles/palindrome_number.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_number.dir\build.make CMakeFiles/palindrome_number.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles --progress-num=3,4 "Built target palindrome_number"
-.PHONY : CMakeFiles/palindrome_number.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/palindrome_number.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/palindrome_number.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles 0
-.PHONY : CMakeFiles/palindrome_number.dir/rule
-
-# Convenience name for target.
-palindrome_number: CMakeFiles/palindrome_number.dir/rule
-.PHONY : palindrome_number
-
-# codegen rule for target.
-CMakeFiles/palindrome_number.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_number.dir\build.make CMakeFiles/palindrome_number.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles --progress-num=3,4 "Finished codegen for target palindrome_number"
-.PHONY : CMakeFiles/palindrome_number.dir/codegen
-
-# clean rule for target.
-CMakeFiles/palindrome_number.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_number.dir\build.make CMakeFiles/palindrome_number.dir/clean
-.PHONY : CMakeFiles/palindrome_number.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/add2num.dir
-
-# All Build rule for target.
-CMakeFiles/add2num.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\add2num.dir\build.make CMakeFiles/add2num.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\add2num.dir\build.make CMakeFiles/add2num.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles --progress-num=1,2 "Built target add2num"
-.PHONY : CMakeFiles/add2num.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/add2num.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/add2num.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles 0
-.PHONY : CMakeFiles/add2num.dir/rule
-
-# Convenience name for target.
-add2num: CMakeFiles/add2num.dir/rule
-.PHONY : add2num
-
-# codegen rule for target.
-CMakeFiles/add2num.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\add2num.dir\build.make CMakeFiles/add2num.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\review\build\CMakeFiles --progress-num=1,2 "Finished codegen for target add2num"
-.PHONY : CMakeFiles/add2num.dir/codegen
-
-# clean rule for target.
-CMakeFiles/add2num.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\add2num.dir\build.make CMakeFiles/add2num.dir/clean
-.PHONY : CMakeFiles/add2num.dir/clean
+CMakeFiles/long_prefix.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\long_prefix.dir\build.make CMakeFiles/long_prefix.dir/clean
+.PHONY : CMakeFiles/long_prefix.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

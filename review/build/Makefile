@@ -116,115 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named twosum
+# Target rules for targets named long_prefix
 
 # Build rule for target.
-twosum: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 twosum
-.PHONY : twosum
+long_prefix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 long_prefix
+.PHONY : long_prefix
 
 # fast build rule for target.
-twosum/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\twosum.dir\build.make CMakeFiles/twosum.dir/build
-.PHONY : twosum/fast
+long_prefix/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\long_prefix.dir\build.make CMakeFiles/long_prefix.dir/build
+.PHONY : long_prefix/fast
 
-#=============================================================================
-# Target rules for targets named palindrome_number
-
-# Build rule for target.
-palindrome_number: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 palindrome_number
-.PHONY : palindrome_number
-
-# fast build rule for target.
-palindrome_number/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_number.dir\build.make CMakeFiles/palindrome_number.dir/build
-.PHONY : palindrome_number/fast
-
-#=============================================================================
-# Target rules for targets named add2num
-
-# Build rule for target.
-add2num: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 add2num
-.PHONY : add2num
-
-# fast build rule for target.
-add2num/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\add2num.dir\build.make CMakeFiles/add2num.dir/build
-.PHONY : add2num/fast
-
-add2num.obj: add2num.cpp.obj
-.PHONY : add2num.obj
+long_prefix.obj: long_prefix.cpp.obj
+.PHONY : long_prefix.obj
 
 # target to build an object file
-add2num.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\add2num.dir\build.make CMakeFiles/add2num.dir/add2num.cpp.obj
-.PHONY : add2num.cpp.obj
+long_prefix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\long_prefix.dir\build.make CMakeFiles/long_prefix.dir/long_prefix.cpp.obj
+.PHONY : long_prefix.cpp.obj
 
-add2num.i: add2num.cpp.i
-.PHONY : add2num.i
-
-# target to preprocess a source file
-add2num.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\add2num.dir\build.make CMakeFiles/add2num.dir/add2num.cpp.i
-.PHONY : add2num.cpp.i
-
-add2num.s: add2num.cpp.s
-.PHONY : add2num.s
-
-# target to generate assembly for a file
-add2num.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\add2num.dir\build.make CMakeFiles/add2num.dir/add2num.cpp.s
-.PHONY : add2num.cpp.s
-
-palindrome_number.obj: palindrome_number.cpp.obj
-.PHONY : palindrome_number.obj
-
-# target to build an object file
-palindrome_number.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_number.dir\build.make CMakeFiles/palindrome_number.dir/palindrome_number.cpp.obj
-.PHONY : palindrome_number.cpp.obj
-
-palindrome_number.i: palindrome_number.cpp.i
-.PHONY : palindrome_number.i
+long_prefix.i: long_prefix.cpp.i
+.PHONY : long_prefix.i
 
 # target to preprocess a source file
-palindrome_number.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_number.dir\build.make CMakeFiles/palindrome_number.dir/palindrome_number.cpp.i
-.PHONY : palindrome_number.cpp.i
+long_prefix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\long_prefix.dir\build.make CMakeFiles/long_prefix.dir/long_prefix.cpp.i
+.PHONY : long_prefix.cpp.i
 
-palindrome_number.s: palindrome_number.cpp.s
-.PHONY : palindrome_number.s
-
-# target to generate assembly for a file
-palindrome_number.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_number.dir\build.make CMakeFiles/palindrome_number.dir/palindrome_number.cpp.s
-.PHONY : palindrome_number.cpp.s
-
-twosum.obj: twosum.cpp.obj
-.PHONY : twosum.obj
-
-# target to build an object file
-twosum.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\twosum.dir\build.make CMakeFiles/twosum.dir/twosum.cpp.obj
-.PHONY : twosum.cpp.obj
-
-twosum.i: twosum.cpp.i
-.PHONY : twosum.i
-
-# target to preprocess a source file
-twosum.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\twosum.dir\build.make CMakeFiles/twosum.dir/twosum.cpp.i
-.PHONY : twosum.cpp.i
-
-twosum.s: twosum.cpp.s
-.PHONY : twosum.s
+long_prefix.s: long_prefix.cpp.s
+.PHONY : long_prefix.s
 
 # target to generate assembly for a file
-twosum.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\twosum.dir\build.make CMakeFiles/twosum.dir/twosum.cpp.s
-.PHONY : twosum.cpp.s
+long_prefix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\long_prefix.dir\build.make CMakeFiles/long_prefix.dir/long_prefix.cpp.s
+.PHONY : long_prefix.cpp.s
 
 # Help Target
 help:
@@ -234,18 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... add2num
-	@echo ... palindrome_number
-	@echo ... twosum
-	@echo ... add2num.obj
-	@echo ... add2num.i
-	@echo ... add2num.s
-	@echo ... palindrome_number.obj
-	@echo ... palindrome_number.i
-	@echo ... palindrome_number.s
-	@echo ... twosum.obj
-	@echo ... twosum.i
-	@echo ... twosum.s
+	@echo ... long_prefix
+	@echo ... long_prefix.obj
+	@echo ... long_prefix.i
+	@echo ... long_prefix.s
 .PHONY : help
 
 
