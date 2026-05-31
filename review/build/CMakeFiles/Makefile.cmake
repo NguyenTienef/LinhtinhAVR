@@ -152,7 +152,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/twosum.dir/DependInfo.cmake"
-  "CMakeFiles/palindrome_number.dir/DependInfo.cmake"
-  "CMakeFiles/add2num.dir/DependInfo.cmake"
+  "CMakeFiles/long_prefix.dir/DependInfo.cmake"
   )

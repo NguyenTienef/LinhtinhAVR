@@ -4,10 +4,12 @@ project(TwoSum)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(twosum twosum.cpp)
+# add_executable(twosum twosum.cpp)
 
-add_executable(palindrome_number palindrome_number.cpp)
+# add_executable(palindrome_number palindrome_number.cpp)
 
-add_executable(add2num add2num.cpp)
+# add_executable(add2num add2num.cpp)
 
 # add_executable(roman_to_integer roman_to_integer.cpp)
+
+add_executable(long_prefix long_prefix.cpp)

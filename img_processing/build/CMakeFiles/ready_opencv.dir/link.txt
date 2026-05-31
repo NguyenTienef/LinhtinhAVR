@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\ready_opencv.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\ready_opencv.dir/objects.a @CMakeFiles\ready_opencv.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\ready_opencv.dir/objects.a -Wl,--no-whole-archive -o ready_opencv.exe -Wl,--out-implib,libready_opencv.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ready_opencv.dir\linkLibs.rsp
