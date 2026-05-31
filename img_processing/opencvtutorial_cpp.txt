@@ -1,0 +1,104 @@
+## cài các extension cho MSYS2 MinGW 64-bit compiler
+```
+pacman -Syu
+pacman -S mingw-w64-x86_64-cmake \
+          mingw-w64-x86_64-ninja \
+          mingw-w64-x86_64-pkg-config
+```
+
+## Clone source code opencv
+```
+# Tải về, ví dụ vào C:\opencv-src
+git clone https://github.com/opencv/opencv.git
+git clone https://github.com/opencv/opencv_contrib.git  # tuỳ chọn
+
+cd opencv
+git checkout 4.10.0   # chọn version ổn định
+cd ../opencv_contrib # optional
+git checkout 4.10.0
+```
+## Config build Cmake
+```
+mkdir build
+cd build
+
+cmake -G "MinGW Makefiles" \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_INSTALL_PREFIX=C:/opencv \
+  -DCMAKE_C_COMPILER=gcc \
+  -DCMAKE_CXX_COMPILER=g++ \
+  -DBUILD_SHARED_LIBS=ON \
+  -DBUILD_TESTS=OFF \
+  -DBUILD_PERF_TESTS=OFF \
+  -DBUILD_EXAMPLES=OFF \
+  -DWITH_OPENMP=ON \
+  -DOPENCV_EXTRA_MODULES_PATH=C:/opencv-src/opencv_contrib/modules \
+  C:/opencv-src/opencv
+
+# Nếu không dùng opencv_contrib, xoá dòng OPENCV_EXTRA_MODULES_PATH.
+```
+## build
+```
+# -j theo số CPU cores của bạn
+cmake --build . --config Release -j8
+cmake --install .
+```
+## add PATH
+```
+sau khi build xong thì trong workspace sẽ có:
+C:\opencv\
+  ├── include\opencv2\
+  ├── lib\        ← .dll.a (import libs)
+  └── bin\        ← .dll files
+
+ta sẽ thêm vào môi trường biến System Environment Variables đường dẫn C:\opencv\bin
+
+```
+## cấu hình json to compiler
+
+c_cpp_properties.json
+```
+# đến bước này gần như là thành công rồi cấu hình json là chạy thôi
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/opencv/include"
+      ],
+      "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}
+```
+task.json
+```
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "${file}",
+        "-o", "${fileDirname}/${fileBasenameNoExtension}.exe",
+        "-I", "C:/opencv/include",
+        "-L", "C:/opencv/x64/mingw/lib",
+        "-lopencv_core4100",
+        "-lopencv_highgui4100",
+        "-lopencv_imgproc4100",
+        "-lopencv_imgcodecs4100",
+        "-lopencv_videoio4100",
+        "-std=c++17"
+      ],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
+```

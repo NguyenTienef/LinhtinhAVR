@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include"
+      ],
+      "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}
