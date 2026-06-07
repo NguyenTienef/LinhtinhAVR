@@ -71,29 +71,29 @@ include CMakeFiles/ready_opencv.dir/flags.make
 CMakeFiles/ready_opencv.dir/codegen:
 .PHONY : CMakeFiles/ready_opencv.dir/codegen
 
-CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj: CMakeFiles/ready_opencv.dir/flags.make
-CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj: CMakeFiles/ready_opencv.dir/includes_CXX.rsp
-CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj: C:/Users/Admin/Desktop/Cfile/img_processing/src/ready_opencv.cpp
-CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj: CMakeFiles/ready_opencv.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj -MF CMakeFiles\ready_opencv.dir\src\ready_opencv.cpp.obj.d -o CMakeFiles\ready_opencv.dir\src\ready_opencv.cpp.obj -c C:\Users\Admin\Desktop\Cfile\img_processing\src\ready_opencv.cpp
+CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj: CMakeFiles/ready_opencv.dir/flags.make
+CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj: CMakeFiles/ready_opencv.dir/includes_CXX.rsp
+CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj: C:/Users/Admin/Desktop/Cfile/img_processing/test/ready_opencv.cpp
+CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj: CMakeFiles/ready_opencv.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj -MF CMakeFiles\ready_opencv.dir\test\ready_opencv.cpp.obj.d -o CMakeFiles\ready_opencv.dir\test\ready_opencv.cpp.obj -c C:\Users\Admin\Desktop\Cfile\img_processing\test\ready_opencv.cpp
 
-CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Cfile\img_processing\src\ready_opencv.cpp > CMakeFiles\ready_opencv.dir\src\ready_opencv.cpp.i
+CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Cfile\img_processing\test\ready_opencv.cpp > CMakeFiles\ready_opencv.dir\test\ready_opencv.cpp.i
 
-CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Cfile\img_processing\src\ready_opencv.cpp -o CMakeFiles\ready_opencv.dir\src\ready_opencv.cpp.s
+CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Cfile\img_processing\test\ready_opencv.cpp -o CMakeFiles\ready_opencv.dir\test\ready_opencv.cpp.s
 
 # Object files for target ready_opencv
 ready_opencv_OBJECTS = \
-"CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj"
+"CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj"
 
 # External object files for target ready_opencv
 ready_opencv_EXTERNAL_OBJECTS =
 
-ready_opencv.exe: CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj
+ready_opencv.exe: CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj
 ready_opencv.exe: CMakeFiles/ready_opencv.dir/build.make
 ready_opencv.exe: C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/lib/libopencv_gapi4100.dll.a
 ready_opencv.exe: C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/lib/libopencv_highgui4100.dll.a

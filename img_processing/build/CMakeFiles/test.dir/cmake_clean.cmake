@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test.dir/src/test.cpp.obj"
-  "CMakeFiles/test.dir/src/test.cpp.obj.d"
+  "CMakeFiles/test.dir/test/test.cpp.obj"
+  "CMakeFiles/test.dir/test/test.cpp.obj.d"
   "libtest.dll.a"
   "test.exe"
   "test.exe.manifest"

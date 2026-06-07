@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Admin/Desktop/Cfile/img_processing/src/hsv_cam.cpp" "CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj" "gcc" "CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj.d"
+  "C:/Users/Admin/Desktop/Cfile/img_processing/test/hsv_cam.cpp" "CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj" "gcc" "CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

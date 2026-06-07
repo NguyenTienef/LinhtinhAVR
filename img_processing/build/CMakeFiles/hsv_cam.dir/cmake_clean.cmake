@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj"
-  "CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj.d"
+  "CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj"
+  "CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj.d"
   "hsv_cam.exe"
   "hsv_cam.exe.manifest"
   "hsv_cam.pdb"

@@ -71,29 +71,29 @@ include CMakeFiles/hsv_cam.dir/flags.make
 CMakeFiles/hsv_cam.dir/codegen:
 .PHONY : CMakeFiles/hsv_cam.dir/codegen
 
-CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj: CMakeFiles/hsv_cam.dir/flags.make
-CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj: CMakeFiles/hsv_cam.dir/includes_CXX.rsp
-CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj: C:/Users/Admin/Desktop/Cfile/img_processing/src/hsv_cam.cpp
-CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj: CMakeFiles/hsv_cam.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj -MF CMakeFiles\hsv_cam.dir\src\hsv_cam.cpp.obj.d -o CMakeFiles\hsv_cam.dir\src\hsv_cam.cpp.obj -c C:\Users\Admin\Desktop\Cfile\img_processing\src\hsv_cam.cpp
+CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj: CMakeFiles/hsv_cam.dir/flags.make
+CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj: CMakeFiles/hsv_cam.dir/includes_CXX.rsp
+CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj: C:/Users/Admin/Desktop/Cfile/img_processing/test/hsv_cam.cpp
+CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj: CMakeFiles/hsv_cam.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj -MF CMakeFiles\hsv_cam.dir\test\hsv_cam.cpp.obj.d -o CMakeFiles\hsv_cam.dir\test\hsv_cam.cpp.obj -c C:\Users\Admin\Desktop\Cfile\img_processing\test\hsv_cam.cpp
 
-CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Cfile\img_processing\src\hsv_cam.cpp > CMakeFiles\hsv_cam.dir\src\hsv_cam.cpp.i
+CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Cfile\img_processing\test\hsv_cam.cpp > CMakeFiles\hsv_cam.dir\test\hsv_cam.cpp.i
 
-CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Cfile\img_processing\src\hsv_cam.cpp -o CMakeFiles\hsv_cam.dir\src\hsv_cam.cpp.s
+CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Cfile\img_processing\test\hsv_cam.cpp -o CMakeFiles\hsv_cam.dir\test\hsv_cam.cpp.s
 
 # Object files for target hsv_cam
 hsv_cam_OBJECTS = \
-"CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj"
+"CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj"
 
 # External object files for target hsv_cam
 hsv_cam_EXTERNAL_OBJECTS =
 
-hsv_cam.exe: CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj
+hsv_cam.exe: CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj
 hsv_cam.exe: CMakeFiles/hsv_cam.dir/build.make
 hsv_cam.exe: C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/lib/libopencv_gapi4100.dll.a
 hsv_cam.exe: C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/lib/libopencv_highgui4100.dll.a

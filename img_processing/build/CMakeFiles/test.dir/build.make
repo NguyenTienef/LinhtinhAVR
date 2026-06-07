@@ -71,29 +71,29 @@ include CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/codegen:
 .PHONY : CMakeFiles/test.dir/codegen
 
-CMakeFiles/test.dir/src/test.cpp.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/test.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
-CMakeFiles/test.dir/src/test.cpp.obj: C:/Users/Admin/Desktop/Cfile/img_processing/src/test.cpp
-CMakeFiles/test.dir/src/test.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/test.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.obj -MF CMakeFiles\test.dir\src\test.cpp.obj.d -o CMakeFiles\test.dir\src\test.cpp.obj -c C:\Users\Admin\Desktop\Cfile\img_processing\src\test.cpp
+CMakeFiles/test.dir/test/test.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/test/test.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
+CMakeFiles/test.dir/test/test.cpp.obj: C:/Users/Admin/Desktop/Cfile/img_processing/test/test.cpp
+CMakeFiles/test.dir/test/test.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test/test.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/test/test.cpp.obj -MF CMakeFiles\test.dir\test\test.cpp.obj.d -o CMakeFiles\test.dir\test\test.cpp.obj -c C:\Users\Admin\Desktop\Cfile\img_processing\test\test.cpp
 
-CMakeFiles/test.dir/src/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/test.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Cfile\img_processing\src\test.cpp > CMakeFiles\test.dir\src\test.cpp.i
+CMakeFiles/test.dir/test/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/test/test.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Cfile\img_processing\test\test.cpp > CMakeFiles\test.dir\test\test.cpp.i
 
-CMakeFiles/test.dir/src/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/test.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Cfile\img_processing\src\test.cpp -o CMakeFiles\test.dir\src\test.cpp.s
+CMakeFiles/test.dir/test/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/test/test.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Cfile\img_processing\test\test.cpp -o CMakeFiles\test.dir\test\test.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/src/test.cpp.obj"
+"CMakeFiles/test.dir/test/test.cpp.obj"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test.exe: CMakeFiles/test.dir/src/test.cpp.obj
+test.exe: CMakeFiles/test.dir/test/test.cpp.obj
 test.exe: CMakeFiles/test.dir/build.make
 test.exe: C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/lib/libopencv_gapi4100.dll.a
 test.exe: C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/lib/libopencv_highgui4100.dll.a

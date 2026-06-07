@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Admin/Desktop/Cfile/img_processing/src/ready_opencv.cpp" "CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj" "gcc" "CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj.d"
+  "C:/Users/Admin/Desktop/Cfile/img_processing/test/ready_opencv.cpp" "CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj" "gcc" "CMakeFiles/ready_opencv.dir/test/ready_opencv.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

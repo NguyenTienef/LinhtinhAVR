@@ -71,29 +71,29 @@ include CMakeFiles/simple_test.dir/flags.make
 CMakeFiles/simple_test.dir/codegen:
 .PHONY : CMakeFiles/simple_test.dir/codegen
 
-CMakeFiles/simple_test.dir/src/simple_test.cpp.obj: CMakeFiles/simple_test.dir/flags.make
-CMakeFiles/simple_test.dir/src/simple_test.cpp.obj: CMakeFiles/simple_test.dir/includes_CXX.rsp
-CMakeFiles/simple_test.dir/src/simple_test.cpp.obj: C:/Users/Admin/Desktop/Cfile/img_processing/src/simple_test.cpp
-CMakeFiles/simple_test.dir/src/simple_test.cpp.obj: CMakeFiles/simple_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simple_test.dir/src/simple_test.cpp.obj"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_test.dir/src/simple_test.cpp.obj -MF CMakeFiles\simple_test.dir\src\simple_test.cpp.obj.d -o CMakeFiles\simple_test.dir\src\simple_test.cpp.obj -c C:\Users\Admin\Desktop\Cfile\img_processing\src\simple_test.cpp
+CMakeFiles/simple_test.dir/test/simple_test.cpp.obj: CMakeFiles/simple_test.dir/flags.make
+CMakeFiles/simple_test.dir/test/simple_test.cpp.obj: CMakeFiles/simple_test.dir/includes_CXX.rsp
+CMakeFiles/simple_test.dir/test/simple_test.cpp.obj: C:/Users/Admin/Desktop/Cfile/img_processing/test/simple_test.cpp
+CMakeFiles/simple_test.dir/test/simple_test.cpp.obj: CMakeFiles/simple_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simple_test.dir/test/simple_test.cpp.obj"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_test.dir/test/simple_test.cpp.obj -MF CMakeFiles\simple_test.dir\test\simple_test.cpp.obj.d -o CMakeFiles\simple_test.dir\test\simple_test.cpp.obj -c C:\Users\Admin\Desktop\Cfile\img_processing\test\simple_test.cpp
 
-CMakeFiles/simple_test.dir/src/simple_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simple_test.dir/src/simple_test.cpp.i"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Cfile\img_processing\src\simple_test.cpp > CMakeFiles\simple_test.dir\src\simple_test.cpp.i
+CMakeFiles/simple_test.dir/test/simple_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simple_test.dir/test/simple_test.cpp.i"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Admin\Desktop\Cfile\img_processing\test\simple_test.cpp > CMakeFiles\simple_test.dir\test\simple_test.cpp.i
 
-CMakeFiles/simple_test.dir/src/simple_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simple_test.dir/src/simple_test.cpp.s"
-	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Cfile\img_processing\src\simple_test.cpp -o CMakeFiles\simple_test.dir\src\simple_test.cpp.s
+CMakeFiles/simple_test.dir/test/simple_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simple_test.dir/test/simple_test.cpp.s"
+	C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Admin\Desktop\Cfile\img_processing\test\simple_test.cpp -o CMakeFiles\simple_test.dir\test\simple_test.cpp.s
 
 # Object files for target simple_test
 simple_test_OBJECTS = \
-"CMakeFiles/simple_test.dir/src/simple_test.cpp.obj"
+"CMakeFiles/simple_test.dir/test/simple_test.cpp.obj"
 
 # External object files for target simple_test
 simple_test_EXTERNAL_OBJECTS =
 
-simple_test.exe: CMakeFiles/simple_test.dir/src/simple_test.cpp.obj
+simple_test.exe: CMakeFiles/simple_test.dir/test/simple_test.cpp.obj
 simple_test.exe: CMakeFiles/simple_test.dir/build.make
 simple_test.exe: C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/lib/libopencv_gapi4100.dll.a
 simple_test.exe: C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/lib/libopencv_highgui4100.dll.a

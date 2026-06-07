@@ -1,5 +1,5 @@
-CMakeFiles/test.dir/src/test.cpp.obj: \
- C:\Users\Admin\Desktop\Cfile\img_processing\src\test.cpp \
+CMakeFiles/simple_test.dir/test/simple_test.cpp.obj: \
+ C:\Users\Admin\Desktop\Cfile\img_processing\test\simple_test.cpp \
  C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include/opencv2/opencv.hpp \
  C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include/opencv2/opencv_modules.hpp \
  C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include/opencv2/core.hpp \
