@@ -23,6 +23,8 @@ int main() {
             break;
         }
 
+        cv::flip(frame_bgr, frame_bgr, 1); // Lật ảnh ngang (mirror)
+
         // Chuyển BGR sang HSV
         cv::cvtColor(frame_bgr, frame_hsv, cv::COLOR_BGR2HSV);
 
