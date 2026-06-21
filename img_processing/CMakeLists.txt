@@ -10,7 +10,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 # KIỂU 1: Mỗi file .cpp trong src/ → 1 exe riêng
 # (mỗi file phải có hàm main riêng)
 # ============================================================
-file(GLOB SOURCES "test/*.cpp")
+file(GLOB SOURCES "test/Normal_cam.cpp")
 foreach(SOURCE ${SOURCES})
     get_filename_component(EXE_NAME ${SOURCE} NAME_WE)
     add_executable(${EXE_NAME} ${SOURCE}) 

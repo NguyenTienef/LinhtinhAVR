@@ -158,8 +158,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/hsv_cam.dir/DependInfo.cmake"
-  "CMakeFiles/ready_opencv.dir/DependInfo.cmake"
-  "CMakeFiles/simple_test.dir/DependInfo.cmake"
-  "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/Normal_cam.dir/DependInfo.cmake"
   )
