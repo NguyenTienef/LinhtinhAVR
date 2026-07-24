@@ -1,8 +1,21 @@
-// config for normal camera
-#ifndef CONFIG_H
-#define CONFIG_H
+#pragma once
+#include <cstdint>
 
+enum class ColorMode : uint8_t {
+    BGR = 0,
+    GRAY,
+    HSV,
+    COUNT // dùng để cycle qua các mode (không phải mode thật)
+};
 
+struct CameraConfig {
+    int width      = 1366;
+    int height     = 768;
+    int brightness = 255;   // 0-255
+    bool mirror    = true;
+    bool denoise   = true;
+    ColorMode colorMode = ColorMode::BGR;
+};
 
-
-#endif // CONFIG_H
+// khai báo extern, định nghĩa thật nằm ở config.cpp
+extern CameraConfig g_camConfig;

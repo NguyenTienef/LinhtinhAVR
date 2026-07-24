@@ -373,4 +373,5 @@ CMakeFiles/Normal_cam.dir/test/Normal_cam.cpp.obj: \
  C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include/opencv2/stitching/detail/camera.hpp \
  C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include/opencv2/video.hpp \
  C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include/opencv2/video/tracking.hpp \
- C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include/opencv2/video/background_segm.hpp
+ C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/include/opencv2/video/background_segm.hpp \
+ C:/Users/Admin/Desktop/Cfile/img_processing/include/config.h

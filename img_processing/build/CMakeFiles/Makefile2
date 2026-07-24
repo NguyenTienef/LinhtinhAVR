@@ -84,12 +84,12 @@ clean: CMakeFiles/Normal_cam.dir/clean
 CMakeFiles/Normal_cam.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=1,2 "Built target Normal_cam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=1,2,3 "Built target Normal_cam"
 .PHONY : CMakeFiles/Normal_cam.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Normal_cam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Normal_cam.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles 0
 .PHONY : CMakeFiles/Normal_cam.dir/rule
@@ -101,7 +101,7 @@ Normal_cam: CMakeFiles/Normal_cam.dir/rule
 # codegen rule for target.
 CMakeFiles/Normal_cam.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=1,2 "Finished codegen for target Normal_cam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target Normal_cam"
 .PHONY : CMakeFiles/Normal_cam.dir/codegen
 
 # clean rule for target.

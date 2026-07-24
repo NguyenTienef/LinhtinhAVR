@@ -128,6 +128,30 @@ Normal_cam/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/build
 .PHONY : Normal_cam/fast
 
+include/config.obj: include/config.cpp.obj
+.PHONY : include/config.obj
+
+# target to build an object file
+include/config.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/include/config.cpp.obj
+.PHONY : include/config.cpp.obj
+
+include/config.i: include/config.cpp.i
+.PHONY : include/config.i
+
+# target to preprocess a source file
+include/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/include/config.cpp.i
+.PHONY : include/config.cpp.i
+
+include/config.s: include/config.cpp.s
+.PHONY : include/config.s
+
+# target to generate assembly for a file
+include/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/include/config.cpp.s
+.PHONY : include/config.cpp.s
+
 test/Normal_cam.obj: test/Normal_cam.cpp.obj
 .PHONY : test/Normal_cam.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Normal_cam
+	@echo ... include/config.obj
+	@echo ... include/config.i
+	@echo ... include/config.s
 	@echo ... test/Normal_cam.obj
 	@echo ... test/Normal_cam.i
 	@echo ... test/Normal_cam.s

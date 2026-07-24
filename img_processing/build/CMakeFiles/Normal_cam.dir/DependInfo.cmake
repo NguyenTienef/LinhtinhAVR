@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Admin/Desktop/Cfile/img_processing/include/config.cpp" "CMakeFiles/Normal_cam.dir/include/config.cpp.obj" "gcc" "CMakeFiles/Normal_cam.dir/include/config.cpp.obj.d"
   "C:/Users/Admin/Desktop/Cfile/img_processing/test/Normal_cam.cpp" "CMakeFiles/Normal_cam.dir/test/Normal_cam.cpp.obj" "gcc" "CMakeFiles/Normal_cam.dir/test/Normal_cam.cpp.obj.d"
   )
 

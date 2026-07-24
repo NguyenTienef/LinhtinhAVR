@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Normal_cam.dir/include/config.cpp.obj"
+  "CMakeFiles/Normal_cam.dir/include/config.cpp.obj.d"
   "CMakeFiles/Normal_cam.dir/test/Normal_cam.cpp.obj"
   "CMakeFiles/Normal_cam.dir/test/Normal_cam.cpp.obj.d"
   "Normal_cam.exe"
