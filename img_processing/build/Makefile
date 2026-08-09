@@ -116,65 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Normal_cam
+# Target rules for targets named Cut_image
 
 # Build rule for target.
-Normal_cam: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Normal_cam
-.PHONY : Normal_cam
+Cut_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Cut_image
+.PHONY : Cut_image
 
 # fast build rule for target.
-Normal_cam/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/build
-.PHONY : Normal_cam/fast
+Cut_image/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/build
+.PHONY : Cut_image/fast
 
-include/config.obj: include/config.cpp.obj
-.PHONY : include/config.obj
-
-# target to build an object file
-include/config.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/include/config.cpp.obj
-.PHONY : include/config.cpp.obj
-
-include/config.i: include/config.cpp.i
-.PHONY : include/config.i
-
-# target to preprocess a source file
-include/config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/include/config.cpp.i
-.PHONY : include/config.cpp.i
-
-include/config.s: include/config.cpp.s
-.PHONY : include/config.s
-
-# target to generate assembly for a file
-include/config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/include/config.cpp.s
-.PHONY : include/config.cpp.s
-
-test/Normal_cam.obj: test/Normal_cam.cpp.obj
-.PHONY : test/Normal_cam.obj
+test/Cut_image.obj: test/Cut_image.cpp.obj
+.PHONY : test/Cut_image.obj
 
 # target to build an object file
-test/Normal_cam.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/test/Normal_cam.cpp.obj
-.PHONY : test/Normal_cam.cpp.obj
+test/Cut_image.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.obj
+.PHONY : test/Cut_image.cpp.obj
 
-test/Normal_cam.i: test/Normal_cam.cpp.i
-.PHONY : test/Normal_cam.i
+test/Cut_image.i: test/Cut_image.cpp.i
+.PHONY : test/Cut_image.i
 
 # target to preprocess a source file
-test/Normal_cam.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/test/Normal_cam.cpp.i
-.PHONY : test/Normal_cam.cpp.i
+test/Cut_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.i
+.PHONY : test/Cut_image.cpp.i
 
-test/Normal_cam.s: test/Normal_cam.cpp.s
-.PHONY : test/Normal_cam.s
+test/Cut_image.s: test/Cut_image.cpp.s
+.PHONY : test/Cut_image.s
 
 # target to generate assembly for a file
-test/Normal_cam.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/test/Normal_cam.cpp.s
-.PHONY : test/Normal_cam.cpp.s
+test/Cut_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.s
+.PHONY : test/Cut_image.cpp.s
 
 # Help Target
 help:
@@ -184,13 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Normal_cam
-	@echo ... include/config.obj
-	@echo ... include/config.i
-	@echo ... include/config.s
-	@echo ... test/Normal_cam.obj
-	@echo ... test/Normal_cam.i
-	@echo ... test/Normal_cam.s
+	@echo ... Cut_image
+	@echo ... test/Cut_image.obj
+	@echo ... test/Cut_image.i
+	@echo ... test/Cut_image.s
 .PHONY : help
 
 

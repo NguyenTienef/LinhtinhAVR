@@ -62,11 +62,11 @@ CMAKE_BINARY_DIR = C:\Users\Admin\Desktop\Cfile\img_processing\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Normal_cam.dir/all
+all: CMakeFiles/Cut_image.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/Normal_cam.dir/codegen
+codegen: CMakeFiles/Cut_image.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,40 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Normal_cam.dir/clean
+clean: CMakeFiles/Cut_image.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Normal_cam.dir
+# Target rules for target CMakeFiles/Cut_image.dir
 
 # All Build rule for target.
-CMakeFiles/Normal_cam.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=1,2,3 "Built target Normal_cam"
-.PHONY : CMakeFiles/Normal_cam.dir/all
+CMakeFiles/Cut_image.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=1,2 "Built target Cut_image"
+.PHONY : CMakeFiles/Cut_image.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Normal_cam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Normal_cam.dir/all
+CMakeFiles/Cut_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Cut_image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles 0
-.PHONY : CMakeFiles/Normal_cam.dir/rule
+.PHONY : CMakeFiles/Cut_image.dir/rule
 
 # Convenience name for target.
-Normal_cam: CMakeFiles/Normal_cam.dir/rule
-.PHONY : Normal_cam
+Cut_image: CMakeFiles/Cut_image.dir/rule
+.PHONY : Cut_image
 
 # codegen rule for target.
-CMakeFiles/Normal_cam.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target Normal_cam"
-.PHONY : CMakeFiles/Normal_cam.dir/codegen
+CMakeFiles/Cut_image.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Admin\Desktop\Cfile\img_processing\build\CMakeFiles --progress-num=1,2 "Finished codegen for target Cut_image"
+.PHONY : CMakeFiles/Cut_image.dir/codegen
 
 # clean rule for target.
-CMakeFiles/Normal_cam.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Normal_cam.dir\build.make CMakeFiles/Normal_cam.dir/clean
-.PHONY : CMakeFiles/Normal_cam.dir/clean
+CMakeFiles/Cut_image.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/clean
+.PHONY : CMakeFiles/Cut_image.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

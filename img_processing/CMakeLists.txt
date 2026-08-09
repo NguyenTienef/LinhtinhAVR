@@ -44,12 +44,12 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 # KIỂU 1: Mỗi file .cpp trong test/ → 1 exe riêng
 # (mỗi file phải có hàm main riêng)
 # ============================================================
-file(GLOB SOURCES "test/Normal_cam.cpp")
+file(GLOB SOURCES "test/Cut_image.cpp")
 foreach(SOURCE ${SOURCES})
     get_filename_component(EXE_NAME ${SOURCE} NAME_WE)
     add_executable(${EXE_NAME}
         ${SOURCE}
-        ${CMAKE_SOURCE_DIR}/include/config.cpp
+        #${CMAKE_SOURCE_DIR}/include/config.cpp
     )
     target_link_libraries(${EXE_NAME} ${OpenCV_LIBS})
     target_include_directories(${EXE_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/include)
