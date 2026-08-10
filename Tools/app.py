@@ -33,7 +33,7 @@ BOARD_PROFILES = {
 class FlashApp(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
-        self.title(f"{APP_NAME} - Python MVP")
+        self.title(f"{APP_NAME} - Python {os.getenv('PYTHON_VERSION', 'unknown')}")
         self.geometry("850x680")
         self.minsize(720, 580)
 
