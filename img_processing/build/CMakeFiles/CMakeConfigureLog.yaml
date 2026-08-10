@@ -5,14 +5,14 @@ events:
     kind: "message-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineSystem.cmake:212 (message)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       The system is: Windows - 10.0.22631 - AMD64
   -
     kind: "find-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
     description: "Path to a program."
@@ -27,6 +27,8 @@ events:
     names:
       - "mingw32-make.exe"
     candidate_directories:
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -47,6 +49,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -59,6 +62,10 @@ events:
       - "/MinGW/bin/"
       - "/REGISTRY-NOTFOUND/MinGW/bin/"
     searched_directories:
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/mingw32-make.exe.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/mingw32-make.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/mingw32-make.exe.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/mingw32-make.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mingw32-make.exe.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mingw32-make.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/mingw32-make.exe.com"
@@ -99,6 +106,8 @@ events:
       - "C:/Program Files/usbipd-win/mingw32-make.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/mingw32-make.exe.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/mingw32-make.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/mingw32-make.exe.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/mingw32-make.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/mingw32-make.exe.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/mingw32-make.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/mingw32-make.exe.com"
@@ -111,6 +120,8 @@ events:
     found: "C:/msys64/ucrt64/bin/mingw32-make.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -131,6 +142,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -144,7 +156,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:63 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:64 (_cmake_find_compiler)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER"
     description: "C compiler"
@@ -165,6 +177,8 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -185,6 +199,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -193,6 +208,48 @@ events:
       - "C:/Users/Admin/AppData/Roaming/npm/"
       - "C:/Program Files/RTABMap/bin/"
     searched_directories:
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/cc.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/cc.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/cc"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/cl.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/cl.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/cl"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/bcc.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/bcc.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/bcc"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/xlc.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/xlc.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/xlc"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/icx.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/icx.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/icx"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/clang.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/clang.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/clang"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/cc.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/cc.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/cc"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/cl.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/cl.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/cl"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/bcc.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/bcc.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/bcc"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/xlc.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/xlc.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/xlc"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/icx.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/icx.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/icx"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/clang.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/clang.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/clang"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/cc.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/cc.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/cc"
@@ -613,6 +670,27 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/clang.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/clang.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/clang"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/cc.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/cc.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/cc"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/cl.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/cl.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/cl"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/bcc.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/bcc.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/bcc"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/xlc.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/xlc.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/xlc"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/icx.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/icx.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/icx"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/clang.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/clang.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/clang"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/cc.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/cc.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/cc"
@@ -701,6 +779,8 @@ events:
     found: "C:/msys64/ucrt64/bin/cc.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -721,6 +801,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -737,7 +818,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -756,6 +837,8 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -776,6 +859,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -790,7 +874,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: C:/msys64/ucrt64/bin/cc.exe 
@@ -811,7 +895,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -827,6 +911,8 @@ events:
       - "ar"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -847,6 +933,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -858,6 +945,8 @@ events:
     found: "C:/msys64/ucrt64/bin/ar.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -878,6 +967,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -891,7 +981,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -907,6 +997,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -927,6 +1019,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -938,6 +1031,8 @@ events:
     found: "C:/msys64/ucrt64/bin/ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -958,6 +1053,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -971,7 +1067,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -987,6 +1083,8 @@ events:
       - "strip"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1007,6 +1105,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1018,6 +1117,8 @@ events:
     found: "C:/msys64/ucrt64/bin/strip.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1038,6 +1139,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1051,7 +1153,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -1067,6 +1169,8 @@ events:
       - "ld"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1087,6 +1191,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1098,6 +1203,8 @@ events:
     found: "C:/msys64/ucrt64/bin/ld.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1118,6 +1225,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1131,7 +1239,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -1147,6 +1255,8 @@ events:
       - "nm"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1167,6 +1277,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1178,6 +1289,8 @@ events:
     found: "C:/msys64/ucrt64/bin/nm.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1198,6 +1311,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1211,7 +1325,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -1227,6 +1341,8 @@ events:
       - "objdump"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1247,6 +1363,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1258,6 +1375,8 @@ events:
     found: "C:/msys64/ucrt64/bin/objdump.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1278,6 +1397,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1291,7 +1411,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -1307,6 +1427,8 @@ events:
       - "objcopy"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1327,6 +1449,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1338,6 +1461,8 @@ events:
     found: "C:/msys64/ucrt64/bin/objcopy.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1358,6 +1483,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1371,7 +1497,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -1387,6 +1513,8 @@ events:
       - "readelf"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1407,6 +1535,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1418,6 +1547,8 @@ events:
     found: "C:/msys64/ucrt64/bin/readelf.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1438,6 +1569,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1451,7 +1583,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -1467,6 +1599,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1487,6 +1621,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1498,6 +1633,8 @@ events:
     found: "C:/msys64/ucrt64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1518,6 +1655,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1531,7 +1669,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -1547,6 +1685,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1567,6 +1707,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1578,6 +1719,8 @@ events:
     found: "C:/msys64/ucrt64/bin/addr2line.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1598,6 +1741,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1611,7 +1755,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -1627,6 +1771,8 @@ events:
       - "tapi"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1647,6 +1793,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1657,6 +1804,12 @@ events:
       - "C:/msys64/ucrt64/bin/tapi.com"
       - "C:/msys64/ucrt64/bin/tapi.exe"
       - "C:/msys64/ucrt64/bin/tapi"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/tapi.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/tapi.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/tapi"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/tapi.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/tapi.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/tapi"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
@@ -1717,6 +1870,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/tapi.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/tapi.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/tapi"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/tapi.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/tapi.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/tapi"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/tapi.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/tapi.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/tapi"
@@ -1738,6 +1894,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -1758,6 +1916,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -1771,7 +1930,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1790,6 +1949,8 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -1810,6 +1971,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -1820,6 +1982,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.1.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.1.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.1"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.1.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.1.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.1"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1"
@@ -1880,6 +2048,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.1.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.1.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.1"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.1.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.1.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.1"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.1.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.1.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.1"
@@ -1901,6 +2072,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar-16.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16"
@@ -1961,6 +2138,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16"
@@ -1982,6 +2162,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar16.com"
       - "C:/msys64/ucrt64/bin/gcc-ar16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar16"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16"
@@ -2042,6 +2228,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar16.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar16.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar16"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar16.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar16.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar16"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16"
@@ -2064,6 +2253,8 @@ events:
     found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -2084,6 +2275,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -2097,7 +2289,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2116,6 +2308,8 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -2136,6 +2330,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -2146,6 +2341,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.1.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.1.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.1"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.1.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.1.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.1"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1"
@@ -2206,6 +2407,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.1.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.1.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.1"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.1.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.1.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.1"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.1.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.1.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.1"
@@ -2227,6 +2431,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16"
@@ -2287,6 +2497,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16"
@@ -2308,6 +2521,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib16.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib16"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16"
@@ -2368,6 +2587,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib16.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib16.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib16"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib16.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib16.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib16"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16"
@@ -2390,6 +2612,8 @@ events:
     found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -2410,6 +2634,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -2423,7 +2648,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER"
     description: "CXX compiler"
@@ -2449,6 +2674,8 @@ events:
     found: "C:/msys64/ucrt64/bin/c++.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -2469,6 +2696,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -2485,7 +2713,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -2504,6 +2732,8 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -2524,6 +2754,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -2538,7 +2769,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: C:/msys64/ucrt64/bin/c++.exe 
@@ -2559,7 +2790,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2578,6 +2809,8 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -2598,6 +2831,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -2608,6 +2842,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.1"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.1.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.1.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.1"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.1.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.1.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.1"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1"
@@ -2668,6 +2908,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.1.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.1.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.1"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.1.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.1.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.1"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.1.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.1.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.1"
@@ -2689,6 +2932,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar-16.com"
       - "C:/msys64/ucrt64/bin/gcc-ar-16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar-16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar-16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar-16"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16"
@@ -2749,6 +2998,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar-16"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar-16"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar-16"
@@ -2770,6 +3022,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ar16.com"
       - "C:/msys64/ucrt64/bin/gcc-ar16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ar16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ar16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ar16"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16"
@@ -2830,6 +3088,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar16.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar16.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ar16"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar16.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar16.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ar16"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ar16"
@@ -2852,6 +3113,8 @@ events:
     found: "C:/msys64/ucrt64/bin/gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -2872,6 +3135,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -2885,7 +3149,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2904,6 +3168,8 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -2924,6 +3190,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -2934,6 +3201,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.1"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.1.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.1.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.1"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.1.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.1.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.1"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1"
@@ -2994,6 +3267,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.1.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.1.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.1"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.1.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.1.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.1"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.1.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.1.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.1"
@@ -3015,6 +3291,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib-16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib-16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib-16"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16"
@@ -3075,6 +3357,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib-16"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib-16"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib-16"
@@ -3096,6 +3381,12 @@ events:
       - "C:/msys64/ucrt64/bin/gcc-ranlib16.com"
       - "C:/msys64/ucrt64/bin/gcc-ranlib16.exe"
       - "C:/msys64/ucrt64/bin/gcc-ranlib16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/gcc-ranlib16"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib16.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib16.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/gcc-ranlib16"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16"
@@ -3156,6 +3447,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib16.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib16.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/gcc-ranlib16"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib16.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib16.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/gcc-ranlib16"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/gcc-ranlib16"
@@ -3178,6 +3472,8 @@ events:
     found: "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -3198,6 +3494,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -3213,7 +3510,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU.cmake:167 (enable_language)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-C.cmake:2 (__windows_compiler_gnu)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeCInformation.cmake:48 (include)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     mode: "program"
     variable: "CMAKE_RC_COMPILER"
     description: "RC compiler"
@@ -3229,6 +3526,8 @@ events:
       - "windres"
       - "windres"
     candidate_directories:
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Windows/System32/"
@@ -3249,6 +3548,7 @@ events:
       - "C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/"
       - "C:/Program Files/usbipd-win/"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/"
       - "C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/"
@@ -3269,6 +3569,12 @@ events:
       - "C:/Program Files (x86)/img_processing/sbin/"
       - "C:/Program Files (x86)/img_processing/"
     searched_directories:
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/windres.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/windres.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64/resources/binaries/win32/x86_64/windres"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/windres.com"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/windres.exe"
+      - "C:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64/windres"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/windres.com"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/windres.exe"
       - "C:/Users/Admin/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/windres"
@@ -3329,6 +3635,9 @@ events:
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/windres.com"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/windres.exe"
       - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/install/x64/mingw/bin/windres"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/windres.com"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/windres.exe"
+      - "C:/Users/Admin/Desktop/Cfile/img_processing/opencv/build/lib/windres"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/windres.com"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/windres.exe"
       - "C:/Users/Admin/AppData/Local/Programs/Python/Python310/Scripts/windres"
@@ -3345,6 +3654,8 @@ events:
     found: "C:/msys64/ucrt64/bin/windres.exe"
     search_context:
       ENV{PATH}:
+        - "c:\\Users\\Admin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.4.0-win32-x64\\resources\\binaries\\win32\\x86_64"
+        - "c:/Users/Admin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.46.0-win32-x64/resources/cube-cmake/win32/x86_64"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
         - "c:\\Users\\Admin\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Windows\\system32"
@@ -3365,6 +3676,7 @@ events:
         - "C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\"
         - "C:\\Program Files\\usbipd-win\\"
         - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\install\\x64\\mingw\\bin"
+        - "C:\\Users\\Admin\\Desktop\\Cfile\\img_processing\\opencv\\build\\lib"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\"
         - "C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps"
@@ -3384,12 +3696,12 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-myqxwq"
-      binary: "C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-myqxwq"
+      source: "C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-stb22c"
+      binary: "C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-stb22c"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -3398,13 +3710,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-myqxwq'
+        Change Dir: 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-stb22c'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_2adc8/fast
-        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2adc8.dir\\build.make CMakeFiles/cmTC_2adc8.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-myqxwq'
-        Building C object CMakeFiles/cmTC_2adc8.dir/CMakeCCompilerABI.c.obj
-        C:\\msys64\\ucrt64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_76bda/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_76bda.dir\\build.make CMakeFiles/cmTC_76bda.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-stb22c'
+        Building C object CMakeFiles/cmTC_76bda.dir/CMakeCCompilerABI.c.obj
+        C:\\msys64\\ucrt64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\cc.exe
         Target: x86_64-w64-mingw32
@@ -3412,8 +3724,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2adc8.dir\\'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_2adc8.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\cc6Hdmnd.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_76bda.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_76bda.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\cc81Vb0f.s
         GNU C23 (Rev5, Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 16.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
         
@@ -3431,14 +3743,14 @@ events:
          C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed
         End of search list.
         Compiler executable checksum: 8ce1135867793bb4ef554b26be63cf3e
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2adc8.dir\\'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\cc6Hdmnd.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_76bda.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\cc81Vb0f.s
         GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.'
-        Linking C executable cmTC_2adc8.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2adc8.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_76bda.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_76bda.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\cc.exe
         COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe
@@ -3449,16 +3761,16 @@ events:
         gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2adc8.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2adc8.'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccyWydOk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2adc8.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2adc8.dir/objects.a --no-whole-archive --out-implib libcmTC_2adc8.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_76bda.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_76bda.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccrFqJke.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_76bda.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_76bda.dir/objects.a --no-whole-archive --out-implib libcmTC_76bda.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         collect2 version 16.1.0
-        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccyWydOk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2adc8.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2adc8.dir/objects.a --no-whole-archive --out-implib libcmTC_2adc8.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccrFqJke.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_76bda.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_76bda.dir/objects.a --no-whole-archive --out-implib libcmTC_76bda.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         GNU ld (GNU Binutils) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2adc8.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2adc8.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_2adc8.dir/objects.a
-        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_2adc8.dir/objects.a @CMakeFiles\\cmTC_2adc8.dir\\objects1.rsp
-        C:\\msys64\\ucrt64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_2adc8.dir/objects.a -Wl,--no-whole-archive -o cmTC_2adc8.exe -Wl,--out-implib,libcmTC_2adc8.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-myqxwq'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_76bda.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_76bda.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_76bda.dir/objects.a
+        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_76bda.dir/objects.a @CMakeFiles\\cmTC_76bda.dir\\objects1.rsp
+        C:\\msys64\\ucrt64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_76bda.dir/objects.a -Wl,--no-whole-archive -o cmTC_76bda.exe -Wl,--out-implib,libcmTC_76bda.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-stb22c'
         
       exitCode: 0
   -
@@ -3466,7 +3778,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
@@ -3486,18 +3798,18 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-myqxwq']
+        ignore line: [Change Dir: 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-stb22c']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_2adc8/fast]
-        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_2adc8.dir\\build.make CMakeFiles/cmTC_2adc8.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-myqxwq']
-        ignore line: [Building C object CMakeFiles/cmTC_2adc8.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\msys64\\ucrt64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_76bda/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_76bda.dir\\build.make CMakeFiles/cmTC_76bda.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-stb22c']
+        ignore line: [Building C object CMakeFiles/cmTC_76bda.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\cc.exe   -v -o CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\cc.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -3505,8 +3817,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.0 (Rev5  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2adc8.dir\\']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_2adc8.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\cc6Hdmnd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_76bda.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_76bda.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\cc81Vb0f.s]
         ignore line: [GNU C23 (Rev5  Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -3524,8 +3836,8 @@ events:
         ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 8ce1135867793bb4ef554b26be63cf3e]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2adc8.dir\\']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\cc6Hdmnd.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_76bda.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\cc81Vb0f.s]
         ignore line: [GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46]
         ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
@@ -3536,9 +3848,9 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_2adc8.dir\\CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_2adc8.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_2adc8.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_76bda.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_76bda.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_76bda.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\cc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe]
@@ -3556,13 +3868,13 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2adc8.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_2adc8.']
-        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccyWydOk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2adc8.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2adc8.dir/objects.a --no-whole-archive --out-implib libcmTC_2adc8.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_76bda.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_76bda.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccrFqJke.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_76bda.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_76bda.dir/objects.a --no-whole-archive --out-implib libcmTC_76bda.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccyWydOk.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccrFqJke.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -3584,7 +3896,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_2adc8.exe] ==> ignore
+          arg [cmTC_76bda.exe] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o]
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0]
@@ -3595,10 +3907,10 @@ events:
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_2adc8.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_76bda.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_2adc8.dll.a] ==> ignore
+          arg [libcmTC_76bda.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -3623,7 +3935,7 @@ events:
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
         ignore line: [collect2 version 16.1.0]
-        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccyWydOk.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2adc8.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_2adc8.dir/objects.a --no-whole-archive --out-implib libcmTC_2adc8.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccrFqJke.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_76bda.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_76bda.dir/objects.a --no-whole-archive --out-implib libcmTC_76bda.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
         linker tool for 'C': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [gcc_eh]
         remove lib [msvcrt]
@@ -3651,7 +3963,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       Running the C compiler's linker: "C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.46
@@ -3660,12 +3972,12 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-pb9yma"
-      binary: "C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-pb9yma"
+      source: "C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-lc7vcw"
+      binary: "C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-lc7vcw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3675,13 +3987,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-pb9yma'
+        Change Dir: 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-lc7vcw'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_f9ad2/fast
-        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f9ad2.dir\\build.make CMakeFiles/cmTC_f9ad2.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-pb9yma'
-        Building CXX object CMakeFiles/cmTC_f9ad2.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_7c1ad/fast
+        C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7c1ad.dir\\build.make CMakeFiles/cmTC_7c1ad.dir/build
+        mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-lc7vcw'
+        Building CXX object CMakeFiles/cmTC_7c1ad.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -3689,8 +4001,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f9ad2.dir\\'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_f9ad2.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\ccl9OCLz.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7c1ad.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_7c1ad.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\ccRu3A5B.s
         GNU C++20 (Rev5, Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 16.1.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
         
@@ -3714,14 +4026,14 @@ events:
          C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed
         End of search list.
         Compiler executable checksum: c17fb94a142b10fdb3ae88ea0e837cbf
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f9ad2.dir\\'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\ccl9OCLz.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7c1ad.dir\\'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\ccRu3A5B.s
         GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_f9ad2.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f9ad2.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7c1ad.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7c1ad.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe
@@ -3732,16 +4044,16 @@ events:
         gcc version 16.1.0 (Rev5, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/;C:/msys64/ucrt64/bin/../lib/gcc/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9ad2.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f9ad2.'
-         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccP0GFkF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_f9ad2.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f9ad2.dir/objects.a --no-whole-archive --out-implib libcmTC_f9ad2.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7c1ad.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7c1ad.'
+         C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTDMWcH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_7c1ad.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7c1ad.dir/objects.a --no-whole-archive --out-implib libcmTC_7c1ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         collect2 version 16.1.0
-        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccP0GFkF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_f9ad2.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f9ad2.dir/objects.a --no-whole-archive --out-implib libcmTC_f9ad2.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
+        C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTDMWcH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_7c1ad.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7c1ad.dir/objects.a --no-whole-archive --out-implib libcmTC_7c1ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o
         GNU ld (GNU Binutils) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9ad2.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f9ad2.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_f9ad2.dir/objects.a
-        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_f9ad2.dir/objects.a @CMakeFiles\\cmTC_f9ad2.dir\\objects1.rsp
-        C:\\msys64\\ucrt64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_f9ad2.dir/objects.a -Wl,--no-whole-archive -o cmTC_f9ad2.exe -Wl,--out-implib,libcmTC_f9ad2.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-pb9yma'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7c1ad.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7c1ad.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7c1ad.dir/objects.a
+        C:\\msys64\\ucrt64\\bin\\ar.exe qc CMakeFiles\\cmTC_7c1ad.dir/objects.a @CMakeFiles\\cmTC_7c1ad.dir\\objects1.rsp
+        C:\\msys64\\ucrt64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_7c1ad.dir/objects.a -Wl,--no-whole-archive -o cmTC_7c1ad.exe -Wl,--out-implib,libcmTC_7c1ad.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-lc7vcw'
         
       exitCode: 0
   -
@@ -3749,7 +4061,7 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
@@ -3775,18 +4087,18 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-pb9yma']
+        ignore line: [Change Dir: 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-lc7vcw']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_f9ad2/fast]
-        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_f9ad2.dir\\build.make CMakeFiles/cmTC_f9ad2.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-pb9yma']
-        ignore line: [Building CXX object CMakeFiles/cmTC_f9ad2.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/ucrt64/bin/mingw32-make.exe -f Makefile cmTC_7c1ad/fast]
+        ignore line: [C:/msys64/ucrt64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7c1ad.dir\\build.make CMakeFiles/cmTC_7c1ad.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Admin/Desktop/Cfile/img_processing/build/CMakeFiles/CMakeScratch/TryCompile-lc7vcw']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7c1ad.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\msys64\\ucrt64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -3794,8 +4106,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.0 (Rev5  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f9ad2.dir\\']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_f9ad2.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\ccl9OCLz.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7c1ad.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_7c1ad.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\ccRu3A5B.s]
         ignore line: [GNU C++20 (Rev5  Built by MSYS2 project) version 16.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 16.1.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -3819,8 +4131,8 @@ events:
         ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: c17fb94a142b10fdb3ae88ea0e837cbf]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f9ad2.dir\\']
-        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\ccl9OCLz.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7c1ad.dir\\']
+        ignore line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\ccRu3A5B.s]
         ignore line: [GNU assembler version 2.46 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.46]
         ignore line: [COMPILER_PATH=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/]
@@ -3831,9 +4143,9 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_f9ad2.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_f9ad2.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_f9ad2.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7c1ad.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_7c1ad.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7c1ad.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\ucrt64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe]
@@ -3851,13 +4163,13 @@ events:
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f9ad2.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f9ad2.']
-        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccP0GFkF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_f9ad2.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f9ad2.dir/objects.a --no-whole-archive --out-implib libcmTC_f9ad2.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7c1ad.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_7c1ad.']
+        link line: [ C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTDMWcH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_7c1ad.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7c1ad.dir/objects.a --no-whole-archive --out-implib libcmTC_7c1ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccP0GFkF.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTDMWcH.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -3879,7 +4191,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_f9ad2.exe] ==> ignore
+          arg [cmTC_7c1ad.exe] ==> ignore
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o]
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0]
@@ -3890,10 +4202,10 @@ events:
           arg [-LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..] ==> dir [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_f9ad2.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_7c1ad.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_f9ad2.dll.a] ==> ignore
+          arg [libcmTC_7c1ad.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -3919,7 +4231,7 @@ events:
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o] ==> obj [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
         ignore line: [collect2 version 16.1.0]
-        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccP0GFkF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_f9ad2.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_f9ad2.dir/objects.a --no-whole-archive --out-implib libcmTC_f9ad2.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
+        ignore line: [C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTDMWcH.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_7c1ad.exe C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/crt2.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtbegin.o -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0 -LC:/msys64/ucrt64/bin/../lib/gcc -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7c1ad.dir/objects.a --no-whole-archive --out-implib libcmTC_7c1ad.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/../../../../lib/default-manifest.o C:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/16.1.0/crtend.o]
         linker tool for 'CXX': C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -3945,7 +4257,7 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
       - "C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
+      - "CMakeLists.txt:35 (project)"
     message: |
       Running the CXX compiler's linker: "C:/msys64/ucrt64/x86_64-w64-mingw32/bin/ld.exe" "-v"
       GNU ld (GNU Binutils) 2.46

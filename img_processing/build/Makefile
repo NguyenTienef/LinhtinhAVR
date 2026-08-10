@@ -116,152 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hsv_cam
+# Target rules for targets named Cut_image
 
 # Build rule for target.
-hsv_cam: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hsv_cam
-.PHONY : hsv_cam
+Cut_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Cut_image
+.PHONY : Cut_image
 
 # fast build rule for target.
-hsv_cam/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hsv_cam.dir\build.make CMakeFiles/hsv_cam.dir/build
-.PHONY : hsv_cam/fast
+Cut_image/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/build
+.PHONY : Cut_image/fast
 
-#=============================================================================
-# Target rules for targets named ready_opencv
-
-# Build rule for target.
-ready_opencv: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ready_opencv
-.PHONY : ready_opencv
-
-# fast build rule for target.
-ready_opencv/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ready_opencv.dir\build.make CMakeFiles/ready_opencv.dir/build
-.PHONY : ready_opencv/fast
-
-#=============================================================================
-# Target rules for targets named simple_test
-
-# Build rule for target.
-simple_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 simple_test
-.PHONY : simple_test
-
-# fast build rule for target.
-simple_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_test.dir\build.make CMakeFiles/simple_test.dir/build
-.PHONY : simple_test/fast
-
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
-
-src/hsv_cam.obj: src/hsv_cam.cpp.obj
-.PHONY : src/hsv_cam.obj
+test/Cut_image.obj: test/Cut_image.cpp.obj
+.PHONY : test/Cut_image.obj
 
 # target to build an object file
-src/hsv_cam.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hsv_cam.dir\build.make CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.obj
-.PHONY : src/hsv_cam.cpp.obj
+test/Cut_image.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.obj
+.PHONY : test/Cut_image.cpp.obj
 
-src/hsv_cam.i: src/hsv_cam.cpp.i
-.PHONY : src/hsv_cam.i
-
-# target to preprocess a source file
-src/hsv_cam.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hsv_cam.dir\build.make CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.i
-.PHONY : src/hsv_cam.cpp.i
-
-src/hsv_cam.s: src/hsv_cam.cpp.s
-.PHONY : src/hsv_cam.s
-
-# target to generate assembly for a file
-src/hsv_cam.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\hsv_cam.dir\build.make CMakeFiles/hsv_cam.dir/src/hsv_cam.cpp.s
-.PHONY : src/hsv_cam.cpp.s
-
-src/ready_opencv.obj: src/ready_opencv.cpp.obj
-.PHONY : src/ready_opencv.obj
-
-# target to build an object file
-src/ready_opencv.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ready_opencv.dir\build.make CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.obj
-.PHONY : src/ready_opencv.cpp.obj
-
-src/ready_opencv.i: src/ready_opencv.cpp.i
-.PHONY : src/ready_opencv.i
+test/Cut_image.i: test/Cut_image.cpp.i
+.PHONY : test/Cut_image.i
 
 # target to preprocess a source file
-src/ready_opencv.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ready_opencv.dir\build.make CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.i
-.PHONY : src/ready_opencv.cpp.i
+test/Cut_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.i
+.PHONY : test/Cut_image.cpp.i
 
-src/ready_opencv.s: src/ready_opencv.cpp.s
-.PHONY : src/ready_opencv.s
-
-# target to generate assembly for a file
-src/ready_opencv.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ready_opencv.dir\build.make CMakeFiles/ready_opencv.dir/src/ready_opencv.cpp.s
-.PHONY : src/ready_opencv.cpp.s
-
-src/simple_test.obj: src/simple_test.cpp.obj
-.PHONY : src/simple_test.obj
-
-# target to build an object file
-src/simple_test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_test.dir\build.make CMakeFiles/simple_test.dir/src/simple_test.cpp.obj
-.PHONY : src/simple_test.cpp.obj
-
-src/simple_test.i: src/simple_test.cpp.i
-.PHONY : src/simple_test.i
-
-# target to preprocess a source file
-src/simple_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_test.dir\build.make CMakeFiles/simple_test.dir/src/simple_test.cpp.i
-.PHONY : src/simple_test.cpp.i
-
-src/simple_test.s: src/simple_test.cpp.s
-.PHONY : src/simple_test.s
+test/Cut_image.s: test/Cut_image.cpp.s
+.PHONY : test/Cut_image.s
 
 # target to generate assembly for a file
-src/simple_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\simple_test.dir\build.make CMakeFiles/simple_test.dir/src/simple_test.cpp.s
-.PHONY : src/simple_test.cpp.s
-
-src/test.obj: src/test.cpp.obj
-.PHONY : src/test.obj
-
-# target to build an object file
-src/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/test.cpp.obj
-.PHONY : src/test.cpp.obj
-
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
-
-# target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
-
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
-
-# target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+test/Cut_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.s
+.PHONY : test/Cut_image.cpp.s
 
 # Help Target
 help:
@@ -271,22 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... hsv_cam
-	@echo ... ready_opencv
-	@echo ... simple_test
-	@echo ... test
-	@echo ... src/hsv_cam.obj
-	@echo ... src/hsv_cam.i
-	@echo ... src/hsv_cam.s
-	@echo ... src/ready_opencv.obj
-	@echo ... src/ready_opencv.i
-	@echo ... src/ready_opencv.s
-	@echo ... src/simple_test.obj
-	@echo ... src/simple_test.i
-	@echo ... src/simple_test.s
-	@echo ... src/test.obj
-	@echo ... src/test.i
-	@echo ... src/test.s
+	@echo ... Cut_image
+	@echo ... test/Cut_image.obj
+	@echo ... test/Cut_image.i
+	@echo ... test/Cut_image.s
 .PHONY : help
 
 

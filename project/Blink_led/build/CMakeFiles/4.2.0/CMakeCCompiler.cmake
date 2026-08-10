@@ -1,10 +1,10 @@
 set(CMAKE_C_COMPILER "C:/msys64/mingw64/bin/avr-gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "14.2.0")
+set(CMAKE_C_COMPILER_VERSION "15.2.0")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
-set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
+set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "23")
 set(CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT "ON")
 set(CMAKE_C_STANDARD_LATEST "23")
 set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macros;c_std_11;c_static_assert;c_std_17;c_std_23")
@@ -78,7 +78,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/msys64/mingw64/lib/gcc/avr/14.2.0/include;C:/msys64/mingw64/lib/gcc/avr/14.2.0/include-fixed;C:/msys64/mingw64/avr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/msys64/mingw64/lib/gcc/avr/15.2.0/include;C:/msys64/mingw64/lib/gcc/avr/15.2.0/include-fixed;C:/msys64/mingw64/avr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;m;c")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/msys64/mingw64/lib/gcc/avr/14.2.0;C:/msys64/mingw64/lib/gcc;C:/msys64/mingw64/avr/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/msys64/mingw64/lib/gcc/avr/15.2.0;C:/msys64/mingw64/lib/gcc;C:/msys64/mingw64/avr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
