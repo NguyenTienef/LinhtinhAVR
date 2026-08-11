@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\hsv_cam.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\hsv_cam.dir/objects.a @CMakeFiles\hsv_cam.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\hsv_cam.dir/objects.a -Wl,--no-whole-archive -o hsv_cam.exe -Wl,--out-implib,libhsv_cam.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hsv_cam.dir\linkLibs.rsp

@@ -116,41 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Cut_image
+# Target rules for targets named hsv_cam
 
 # Build rule for target.
-Cut_image: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Cut_image
-.PHONY : Cut_image
+hsv_cam: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 hsv_cam
+.PHONY : hsv_cam
 
 # fast build rule for target.
-Cut_image/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/build
-.PHONY : Cut_image/fast
+hsv_cam/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hsv_cam.dir\build.make CMakeFiles/hsv_cam.dir/build
+.PHONY : hsv_cam/fast
 
-test/Cut_image.obj: test/Cut_image.cpp.obj
-.PHONY : test/Cut_image.obj
+test/hsv_cam.obj: test/hsv_cam.cpp.obj
+.PHONY : test/hsv_cam.obj
 
 # target to build an object file
-test/Cut_image.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.obj
-.PHONY : test/Cut_image.cpp.obj
+test/hsv_cam.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hsv_cam.dir\build.make CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.obj
+.PHONY : test/hsv_cam.cpp.obj
 
-test/Cut_image.i: test/Cut_image.cpp.i
-.PHONY : test/Cut_image.i
+test/hsv_cam.i: test/hsv_cam.cpp.i
+.PHONY : test/hsv_cam.i
 
 # target to preprocess a source file
-test/Cut_image.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.i
-.PHONY : test/Cut_image.cpp.i
+test/hsv_cam.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hsv_cam.dir\build.make CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.i
+.PHONY : test/hsv_cam.cpp.i
 
-test/Cut_image.s: test/Cut_image.cpp.s
-.PHONY : test/Cut_image.s
+test/hsv_cam.s: test/hsv_cam.cpp.s
+.PHONY : test/hsv_cam.s
 
 # target to generate assembly for a file
-test/Cut_image.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Cut_image.dir\build.make CMakeFiles/Cut_image.dir/test/Cut_image.cpp.s
-.PHONY : test/Cut_image.cpp.s
+test/hsv_cam.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hsv_cam.dir\build.make CMakeFiles/hsv_cam.dir/test/hsv_cam.cpp.s
+.PHONY : test/hsv_cam.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Cut_image
-	@echo ... test/Cut_image.obj
-	@echo ... test/Cut_image.i
-	@echo ... test/Cut_image.s
+	@echo ... hsv_cam
+	@echo ... test/hsv_cam.obj
+	@echo ... test/hsv_cam.i
+	@echo ... test/hsv_cam.s
 .PHONY : help
 
 

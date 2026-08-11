@@ -44,7 +44,7 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 # KIỂU 1: Mỗi file .cpp trong test/ → 1 exe riêng
 # (mỗi file phải có hàm main riêng)
 # ============================================================
-file(GLOB SOURCES "test/Cut_image.cpp")
+file(GLOB SOURCES "test/hsv_cam.cpp")
 foreach(SOURCE ${SOURCES})
     get_filename_component(EXE_NAME ${SOURCE} NAME_WE)
     add_executable(${EXE_NAME}

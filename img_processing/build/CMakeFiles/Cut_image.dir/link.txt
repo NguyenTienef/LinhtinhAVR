@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Cut_image.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\Cut_image.dir/objects.a @CMakeFiles\Cut_image.dir\objects1.rsp
-C:\msys64\ucrt64\bin\c++.exe -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles\Cut_image.dir/objects.a -Wl,--no-whole-archive -o Cut_image.exe -Wl,--out-implib,libCut_image.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Cut_image.dir\linkLibs.rsp
