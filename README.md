@@ -1,46 +1,50 @@
 # C/AVR Embedded Systems Project Collection
 
-Một bộ sưu tập các dự án nhúng sử dụng ngôn ngữ C và AVR microcontroller, bao gồm các ứng dụng điều khiển phần cứng, LCD display, xử lý tín hiệu, và các bài toán lập trình.
+This project collection contains embedded applications built with the C language and AVR microcontrollers. It includes hardware control projects, LCD display applications, signal processing examples, and programming practice exercises.
 
-## 📋 Cấu Trúc Dự Án
+## 📁 Project Structure
 
-```
+```text
 Cfile/
-├── project/                 # Các dự án nhúng AVR chính
-│   ├── Blink_led/          # LED blinking (Làm nhấp nháy LED)
-│   ├── Lcd1602/            # LCD 1602 Clock (Đồng hồ LCD)
-│   └── Motor_control/      # Motor Control (Điều khiển động cơ)
-├── review/                 # Bài tập lập trình C++
+├── project/                 # Main AVR embedded projects
+│   ├── Blink_led/           # LED blinking project
+│   ├── Lcd1602/             # LCD 1602 clock project
+│   └── Motor_control/       # Motor control project
+├── review/                  # C++ programming exercises
 │   ├── add2num.cpp
 │   ├── twosum.cpp
 │   └── palindrome_number.cpp
+├── CMakeLists.txt           # Optional root build configuration
+├── build.bat                # Optional Windows build script
+├── build.ps1                # Optional PowerShell build script
 └── README.md
 ```
 
 ---
 
-## 🔧 Dự Án trong `project/`
+## 🔧 Projects in `project/`
 
-### 1. **Blink_led** - Làm Nhấp Nháy LED
+### 1. Blink_led — LED Blinking
 
-Dự án cơ bản nhất - LED nhấp nháy với chu kỳ 500ms.
+This is the simplest and most basic AVR project. It makes an LED blink on and off at a fixed interval.
 
-**Thông số kỹ thuật:**
-- Microcontroller: ATmega (tùy biến)
-- Output: PB5 (LED)
-- Chu kỳ: 500ms bật/tắt
-- Công nghệ: `util/delay.h` delay
+Features:
+- AVR microcontroller-based
+- Output: PB5
+- Blink period: 500ms ON / 500ms OFF
+- Built using `util/delay.h`
 
-**Cấu trúc:**
-```
+Project structure:
+```text
 Blink_led/
 ├── CMakeLists.txt
 ├── src/
 │   └── main.c
-└── build/                  # Build output
+├── build/
+└── README.md
 ```
 
-**Cách build:**
+Build instructions:
 ```bash
 cd project/Blink_led
 mkdir build
@@ -51,36 +55,39 @@ make
 
 ---
 
-### 2. **Lcd1602** - LCD 1602 Digital Clock
+### 2. Lcd1602 — LCD 1602 Digital Clock
 
-Dự án LCD display hiển thị đồng hồ số trên màn hình LCD 16x2.
+This project displays a real-time digital clock on a 16x2 LCD. It demonstrates timer usage and hardware display control.
 
-**Thông số kỹ thuật:**
+Specifications:
 - Microcontroller: ATmega (16 MHz)
-- Display: LCD 16x2 (I2C/Parallel)
-- Features: 
-  - Khởi tạo LCD
-  - Hiển thị đồng hồ real-time
-  - Quản lý timer để update thời gian
+- Display: LCD 16x2
+- Features:
+  - LCD initialization
+  - Real-time clock display
+  - Timer-based time update
+  - Hardware-driven UI output
 
-**Cấu trúc tệp:**
-```
+Project structure:
+```text
 Lcd1602/
 ├── CMakeLists.txt
-├── config.h               # Cấu hình chung
-├── toolchain-avr.cmake    # AVR toolchain config
+├── config.h
+├── toolchain-avr.cmake
 ├── include/
-│   ├── lcd.h             # LCD driver header
-│   └── timer.h           # Timer/Clock header
+│   ├── lcd.h
+│   └── timer.h
 ├── src/
-│   ├── main.c            # Main program
-│   ├── lcd.c             # LCD implementation
-│   └── timer.c           # Timer implementation
-├── build.bat / build.ps1 # Windows build scripts
-└── build/                # Build output
+│   ├── main.c
+│   ├── lcd.c
+│   └── timer.c
+├── build.bat
+├── build.ps1
+├── build/
+└── README.md
 ```
 
-**Cách build:**
+Build instructions:
 ```bash
 cd project/Lcd1602
 mkdir build
@@ -89,7 +96,7 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchain-avr.cmake
 make
 ```
 
-**Hoặc trên Windows:**
+Windows:
 ```powershell
 cd project/Lcd1602
 .\build.ps1
@@ -97,44 +104,46 @@ cd project/Lcd1602
 
 ---
 
-### 3. **Motor_control** - LinhtinhAVR Motor Controller
+### 3. Motor_control — AVR Motor Controller
 
-Dự án điều khiển động cơ DC với phản hồi encoder, LCD display 16x2, và các nút điều khiển.
+This project is a more advanced embedded system that controls a DC motor with encoder feedback, LCD display, and button inputs.
 
-**Thông số kỹ thuật:**
-- **Microcontroller**: ATmega16 @ 16 MHz
-- **Display**: LCD 16x2
-- **Motor Control**: PWM-based speed control
-- **Feedback**: Encoder (INT0 interrupt)
-- **Inputs**: 4 push buttons (PB0-PB3)
-  - PB0: Tăng tốc độ
-  - PB1: Giảm tốc độ
-  - PB2: Đảo chiều
-  - PB3: Dừng khẩn cấp
+Specifications:
+- Microcontroller: ATmega16 @ 16 MHz
+- Display: LCD 16x2
+- Motor control: PWM-based speed control
+- Feedback: Encoder using hardware interrupt
+- Inputs: 4 push buttons
+  - PB0: Increase speed
+  - PB1: Decrease speed
+  - PB2: Reverse direction
+  - PB3: Emergency stop
 
-**Features:**
-- ✅ Điều khiển tốc độ mượt mà
-- ✅ Hoạt động hai chiều
-- ✅ Giám sát RPM real-time
-- ✅ Hiển thị trạng thái trên LCD
-- ✅ Dừng khẩn cấp
-- ✅ PWM chính xác qua timer hardware
-- ✅ Input responsive via hardware interrupts
+Features:
+- Smooth speed control
+- Bidirectional motor operation
+- Real-time RPM monitoring
+- LCD status display
+- Emergency stop
+- Hardware timer-driven PWM signal generation
+- Responsive input handling through interrupts
 
-**Cấu trúc tệp:**
-```
+Project structure:
+```text
 Motor_control/
 ├── CMakeLists.txt
-├── README.md             # Tài liệu chi tiết
-├── PCB1.PcbDoc          # Sơ đồ PCB custom
+├── README.md
+├── PCB1.PcbDoc
 ├── src/
-│   ├── main.c           # Main program
-│   ├── lcd.c/.h         # LCD driver
-│   └── (thêm các file khác)
-└── build/               # Build output
+│   ├── main.c
+│   ├── lcd.c
+│   ├── lcd.h
+│   └── ...
+├── build/
+└── ...
 ```
 
-**Cách build:**
+Build instructions:
 ```bash
 cd project/Motor_control
 mkdir build
@@ -145,18 +154,18 @@ make
 
 ---
 
-## 📚 Dự Án trong `review/`
+## 📚 Review Projects in `review/`
 
-Thư mục này chứa các bài toán lập trình C++ để ôn tập:
+The `review/` folder contains C++ programming exercises used for training and problem-solving practice.
 
-### File bao gồm:
-- **add2num.cpp** - Cộng hai số
-- **twosum.cpp** - Two Sum (tìm cặp số cộng bằng target)
-- **palindrome_number.cpp** - Kiểm tra số palindrome
-- **CMakeLists.txt** - Build config
-- **build.bat / build.ps1** - Windows build scripts
+Included files:
+- `add2num.cpp` — Add two numbers
+- `twosum.cpp` — Find two numbers whose sum equals a target
+- `palindrome_number.cpp` — Check whether a number is a palindrome
+- `CMakeLists.txt` — Build configuration
+- `build.bat` / `build.ps1` — Windows build scripts
 
-**Cách build:**
+Build instructions:
 ```bash
 cd review
 mkdir build
@@ -167,34 +176,37 @@ make
 
 ---
 
-## 🛠️ Yêu Cầu Hệ Thống
+## 🛠️ System Requirements
 
-### Bắt buộc:
-- **CMake** >= 3.10
-- **Compiler**: 
-  - GCC (cho review)
-  - AVR-GCC (cho project)
-- **Makefile generator** (Make / Ninja)
+### Required tools
+- CMake >= 3.10
+- Compiler:
+  - GCC for review projects
+  - AVR-GCC for embedded projects
+- Make or Ninja
 
-### Optional:
-- **avrdude** - Để upload code lên microcontroller
-- **Python** - Nếu sử dụng build scripts advanced
+### Optional tools
+- avrdude — for uploading firmware to AVR microcontrollers
+- Python — for advanced build scripts
+- Git — for version control
 
-### Cài đặt AVR toolchain:
+### Install AVR toolchain
 
-**Linux/Ubuntu:**
+Ubuntu / Debian:
 ```bash
+sudo apt-get update
 sudo apt-get install gcc-avr avr-libc cmake make
 ```
 
-**macOS:**
+macOS:
 ```bash
 brew install avr-gcc avr-libc cmake
 ```
 
-**Windows:**
-- Download từ: https://www.microchip.com/en-us/development-tools-and-ecosystem/development-tools-and-boards
-- Hoặc sử dụng package manager như `chocolatey`:
+Windows:
+- Download from Microchip's official AVR toolchain page:
+  https://www.microchip.com/en-us/development-tools-and-ecosystem/development-tools-and-boards
+- Or install using Chocolatey:
 ```powershell
 choco install avr-gcc
 ```
@@ -203,14 +215,14 @@ choco install avr-gcc
 
 ## 🚀 Quick Start
 
-### Build tất cả dự án:
+### Build all projects manually
 
-**Linux/macOS:**
+Linux / macOS:
 ```bash
-# Motor Control
+# Motor control
 cd project/Motor_control/build && make
 
-# LCD Clock
+# LCD clock
 cd ../../Lcd1602/build && make
 
 # Blink LED
@@ -220,7 +232,7 @@ cd ../../Blink_led/build && make
 cd ../../../review/build && make
 ```
 
-**Windows (PowerShell):**
+Windows (PowerShell):
 ```powershell
 cd project/Motor_control
 .\build.ps1
@@ -234,33 +246,35 @@ cd ../review
 
 ---
 
-## 📝 Ghi Chú
+## 📝 Notes
 
-- Các dự án sử dụng **CMake** để hỗ trợ cross-platform
-- AVR projects cần **AVR toolchain** đặc biệt
-- Review folder chứa các bài toán lập trình thuần C++
-- Một số dự án có build scripts sẵn (`.bat` và `.ps1`) cho Windows
+- All projects use CMake for cross-platform build support.
+- AVR projects require an AVR-compatible toolchain.
+- The `review/` folder contains standard C++ algorithm and problem-solving exercises.
+- Some projects include ready-to-use Windows build scripts (`.bat` and `.ps1`).
 
 ---
 
-## 👨‍💻 Cấu Trúc Tiêu Chuẩn
+## 👨‍💻 Standard Project Structure
 
-Mỗi dự án tuân theo cấu trúc:
-```
+Each project follows a consistent structure:
+
+```text
 project_name/
-├── CMakeLists.txt        # Build configuration
-├── src/                  # Source files (.c, .cpp)
+├── CMakeLists.txt
+├── src/                  # Source files (.c / .cpp)
 ├── include/              # Header files (.h)
 ├── build/                # Build output
-└── [Platform files]      # build.bat, build.ps1, etc.
+├── README.md             # Project documentation
+└── build scripts / config files
 ```
 
 ---
 
-## 📖 Tài Liệu Thêm
+## 📖 Additional Documentation
 
-Xem file `README.md` chi tiết trong từng thư mục con để biết thêm thông tin.
+For deeper technical details, refer to the README file inside each project folder.
 
 ---
 
-**Cập nhật lần cuối:** April 28, 2026
+Last updated: August 31, 2026
