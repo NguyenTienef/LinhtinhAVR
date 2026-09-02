@@ -1,0 +1,24 @@
+===== Phien lam viec bat dau: 2026-09-02 16:03:02.862090 =====
+Dang chay: C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin\STM32_Programmer_CLI.exe -c port=SWD mode=UR reset=HWrst
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.23.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : 066DFF373841423043112134
+ST-LINK FW  : V2J43M28
+Board       : --
+Voltage     : 3.24V
+SWD freq    : 4000 KHz
+Connect mode: Under Reset
+Reset mode  : Hardware reset
+Device ID   : 0x431
+Revision ID : Rev A
+Device name : STM32F411xC/E
+NVM size    : 512 KBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0xD0
+
+
+[33mWaiting for a debug probe to be connected...[0m
+===== Phien lam viec ket thuc: 2026-09-02 16:03:43.795326 =====

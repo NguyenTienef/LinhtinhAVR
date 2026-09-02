@@ -66,6 +66,17 @@ ST_KNOWN_PIDS = {
 DEFAULT_TARGET = "cortex_m"      # target generic cua pyocd - dung cho doc thanh ghi/bo nho,
                                   # KHONG can CMSIS-Pack (pack cua ST hay bi loi "No matching devices")
 
+# Co the doc target thanh cong bang target generic, nhung nhieu bo STM32 bi loi
+# khi ket noi mac dinh (do firmware da vao low-power / SWD bi chan phai). Theo
+# kinh nghiem, can thu them fallback den ten chip cu the neu target generic fail.
+TARGET_CANDIDATES = [
+    "cortex_m",
+    "stm32f411ce",
+    "stm32f411re",
+    "stm32f407vg",
+    "stm32f429zi",
+]
+
 # Ket noi "under reset": giu chip trong reset trong luc ST-Link bat SWD, giup
 # tranh loi "Unable to get core ID" khi firmware dang chay tren chip da:
 #   - vao che do tiet kiem dien (Stop/Standby) lam tat clock cho SWD, hoac
@@ -107,22 +118,47 @@ def _open_session(target_type):
     from pyocd.core.helpers import ConnectHelper
     from pyocd.core.exceptions import TargetSupportError
 
-    try:
-        session = ConnectHelper.session_with_chosen_probe(target_override=target_type)
-    except TargetSupportError:
-        print(f"Target type '{target_type}' chua duoc pyocd nhan dien.")
-        print("Cai CMSIS-Pack cho chip nay bang lenh:")
-        print(f"    pyocd pack install {target_type}")
-        print("Sau do kiem tra ten target chinh xac bang:")
-        print(f"    pyocd list --targets --name {target_type[:8]}")
-        print("Neu ten target khac, chay lai script voi: --target <ten_dung>")
-        return None
+    candidate_names = []
+    if isinstance(target_type, str):
+        candidate_names = [target_type]
+        if target_type == DEFAULT_TARGET:
+            candidate_names.extend(TARGET_CANDIDATES[1:])
+    elif target_type is None:
+        candidate_names = list(TARGET_CANDIDATES)
 
-    if session is None:
-        print("Khong tim thay ST-Link nao dang cam (kenh SWD).")
-        print("Kiem tra day cap, driver ST-Link, va dam bao khong co chuong trinh")
-        print("khac (STM32CubeIDE, STM32CubeProgrammer, OpenOCD...) dang chiem ST-Link.")
-    return session
+    last_error = None
+    for name in candidate_names:
+        try:
+            session = ConnectHelper.session_with_chosen_probe(
+                target_override=name,
+                options={"connect_mode": "under-reset", "frequency": 1000000},
+            )
+            if session is not None:
+                return session
+        except TypeError:
+            # phien ban pyocd cu hoac API khac: thu phuong thuc khong co options
+            try:
+                session = ConnectHelper.session_with_chosen_probe(target_override=name)
+                if session is not None:
+                    return session
+            except Exception as exc:
+                last_error = exc
+        except TargetSupportError as exc:
+            last_error = exc
+            continue
+        except Exception as exc:
+            last_error = exc
+            continue
+
+    if last_error is not None:
+        msg = str(last_error)
+        if getattr(sys, "frozen", False) and "sequences.lark" in msg:
+            print("Loi bundle PyInstaller: pyocd khong tim duoc file du lieu sequences.lark.")
+            print("Can rebuild exe voi: pyinstaller --collect-data pyocd --onefile --console ...")
+        print(f"Khong ket noi duoc ST-Link qua pyocd. Loi cuoi cung: {last_error}")
+    print("Kiem tra day cap, driver ST-Link, va dam bao khong co chuong trinh")
+    print("khac (STM32CubeIDE, STM32CubeProgrammer, OpenOCD...) dang chiem ST-Link.")
+    return None
 
 
 def find_cube_programmer_cli():
@@ -186,7 +222,12 @@ def read_core_registers(target_type=DEFAULT_TARGET):
     with session:
         target = session.target
         print("Dang halt CPU de doc thanh ghi (chuong trinh se tam dung)...")
-        target.halt()
+        try:
+            target.halt()
+        except Exception as exc:
+            print(f"Khong halt duoc CPU: {exc}")
+            print("Co the do chip dang o che do low-power hoac SWD khong truy cap duoc.")
+            return
 
         print("\nGia tri thanh ghi core:\n")
         for name in CORE_REG_NAMES:
@@ -197,7 +238,10 @@ def read_core_registers(target_type=DEFAULT_TARGET):
                 print(f"  {name.upper():8s} = (khong doc duoc: {e})")
 
         print("\nDang resume CPU (chay tiep chuong trinh)...")
-        target.resume()
+        try:
+            target.resume()
+        except Exception as e:
+            print(f"Khong resume duoc CPU: {e}")
 
     print("=> Hoan tat doc thanh ghi.")
 

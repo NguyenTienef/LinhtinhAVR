@@ -84,7 +84,11 @@ class FlashGUI(tk.Tk):
         self.log_file_path = self._make_log_path()
         self.log_file = open(self.log_file_path, "a", encoding="utf-8", buffering=1)
         self._log_to_file(f"===== Phien lam viec bat dau: {datetime.datetime.now()} =====\n")
-        self._open_external_console(self.log_file_path)
+
+        # Khi build exe voi console=True, terminal log se ton tai trong chung
+        # process cua app va dong dung luc app dong. Khong duoc bat dau mot
+        # child terminal rieng ngoai; voi windowed build, log chi duoc ghi vao file.
+        self._console_mode = hasattr(sys.stdout, "fileno") and sys.stdout is not None
 
         self._build_widgets()
         self.after(50, self._poll_queue)
@@ -108,32 +112,14 @@ class FlashGUI(tk.Tk):
             pass
 
     def _open_external_console(self, log_path):
-        """Mo mot cua so cmd/terminal RIENG, tail log file theo thoi gian thuc,
-        chay song song voi GUI - de xem/copy log ngay ca khi GUI bi treo hoac
-        chu thich hien thi bi cat bot."""
-        try:
-            if os.name == "nt":
-                # Dung PowerShell Get-Content -Wait de tail file lien tuc trong 1 cua so cmd moi
-                ps_cmd = f"Get-Content -Path \"{log_path}\" -Wait -Encoding utf8"
-                full_cmd = (
-                    f'start "STM32 Flash Log" cmd /k powershell -NoExit -Command "{ps_cmd}"'
-                )
-                subprocess.Popen(full_cmd, shell=True)
-            else:
-                # Linux/macOS: thu vai terminal emulator pho bien, bo qua neu khong co
-                for term_cmd in (
-                    ["x-terminal-emulator", "-e", f"tail -f {log_path}"],
-                    ["xterm", "-e", f"tail -f {log_path}"],
-                    ["gnome-terminal", "--", "tail", "-f", log_path],
-                ):
-                    try:
-                        subprocess.Popen(term_cmd)
-                        break
-                    except FileNotFoundError:
-                        continue
-        except Exception:
-            # Khong mo duoc terminal rieng thi bo qua, GUI van hoat dong binh thuong
-            pass
+        """Khong tao them terminal rieng nua.
+
+        Cac phien ban exe/packaged se khong can mo mot console phu. Log duoc_
+        luu vao file va, neu app duoc chay trong console, se hien san trong
+        console cua app chinh. Dieu nay dam bao terminal nay ton tai cung voi
+        qua trinh app va tat khi app dong.
+        """
+        return None
 
     def _on_close(self):
         self._log_to_file(f"===== Phien lam viec ket thuc: {datetime.datetime.now()} =====\n")
